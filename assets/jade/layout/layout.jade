@@ -21,5 +21,10 @@ html
     block headerScripts
 
   body(class="#{bodyClass}")
-    block content
+    .header(role="banner")
+      .header__inner.middle-container
+        .header__logo
+          span.visuallyhidden Stonecutter
+    .main-content
+      block content
     block footerScripts

@@ -1,5 +1,18 @@
 extends layout/layout
 
+mixin addProduct(title, demoURL, gitURL)
+  .product
+    .product__image
+      +imageIncludeTag('temp.png', 'product__image-img')
+    .product__text
+      h2.product__name #{title}
+      p.product__description
+        block
+    ul.product-links
+      li.product-links__item: a.button(href="#{demoURL}") Demo
+      li.product-links__item: a.button(href="#{gitURL}") Github
+
+
 block vars
   - bodyClass = ""
 
@@ -10,7 +23,18 @@ block headerScripts
 
 block content
 
-  .product
-    h2.product-name Objective8
-    p.product-description Readymade salvia vegan, locavore fap farm-to-table keytar Pitchfork listicle meh lomo 8-bit whatever scenester VHS. Pop-up flexitarian XOXO Etsy polaroid tousled. Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas. Bicycle rights umami selvage drinking vinegar, literally skateboard cliche freegan Neutra disrupt yr authentic small batch. Mlkshk organic trust fund, gluten-free distillery Williamsburg semiotics post-ironic Banksy. Occupy scenester blog plaid kale chips, hoodie Banksy keytar chia you probably haven't heard of them. Hella mumblecore organic Godard.
+  .intro
+    p.lede D-CENT is a Europe-wide project creating privacy-aware tools and applications for direct democracy and economic empowerment.
+    p We have a number of offerings to help social engagement within your organisation:
 
+  +addProduct("Objective8", "#demo", "#gitURL")
+    | Readymade salvia vegan, locavore fap farm-to-table keytar Pitchfork listicle meh lomo 8-bit whatever scenester VHS.
+
+  +addProduct("Open authentication", "#demo", "#gitURL")
+    | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
+
+  +addProduct("Secure notifications", "#demo", "#gitURL")
+    | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
+
+  +addProduct("Electronic voting", "#demo", "#gitURL")
+    | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.

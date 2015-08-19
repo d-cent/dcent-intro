@@ -1,0 +1,35 @@
+$header_logo_image_path: 'd-cent.svg';
+
+.header {
+  @include clearfix;
+  height: 80px;
+  margin-bottom: .5rem;
+  background-color: $header_background_color;
+  @include width-from($medium_device) {
+    margin-bottom: 3rem;
+  }
+}
+
+.header__inner {
+  position: relative;
+  padding-top: 15px;
+  padding-left: .75rem;
+  padding-right: .75rem;
+  @include width-from($medium_device) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.header__logo {
+  height: 50px;
+  margin-bottom: 15px;
+  background: image-url($header_logo_image_path) no-repeat 50% 50%;
+  background-size: contain;
+  @include width-from($medium_device) {
+    width: 50%;
+    float: left;
+    margin-bottom: 0;
+    background-position: 0 0;
+  }
+}
