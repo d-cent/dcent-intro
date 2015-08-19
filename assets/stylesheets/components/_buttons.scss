@@ -16,14 +16,17 @@
   @include no-select;
   transform-style: preserve-3d; // Fix safari text flicker (children need backface-visibility: hidden;)
   &:focus, &:hover {
-    background-color: $dark_cyan;
-    box-shadow: 0 10px 30px -5px rgba(0,0,0,.35);
-    transform: translateY(-2px);
+    background-color: darken($dark_cyan, 5%);
     color: $white;
   }
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 30px -5px rgba(0,0,0,.35);
+  }
   &:active {
-    background-color: darken($dark_cyan, 5%);
+    background-color: $darker_cyan;
     outline: 0;
+    transform: translateY(0);
   }
 
   // make it so
