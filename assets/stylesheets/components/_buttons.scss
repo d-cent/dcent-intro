@@ -3,8 +3,8 @@
   appearance: none;
   line-height: 1;
   border: none;
-  padding: 12px 17px;
-  @include font-size(16px);
+  padding: 17px 22px;
+  @include font-size(18px);
   background-color: $dark_cyan;
   text-align: left;
   color: $white;
@@ -13,6 +13,7 @@
   transition: background 250ms ease, color 250ms ease, box-shadow 250ms ease, transform 250ms ease, border 250ms ease;
   outline: 0;
   white-space: nowrap;
+  border-radius: 3px;
   @include no-select;
   transform-style: preserve-3d; // Fix safari text flicker (children need backface-visibility: hidden;)
   &:focus, &:hover {
