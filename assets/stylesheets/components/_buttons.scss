@@ -40,14 +40,17 @@
   }
 
   // secondary action
-  &--secondary {
-    background-color: $light_grey;
-    color: $dark_grey;
+  &--white {
+    background-color: $white;
+    color: $dark_pink;
     &:hover {
-      background-color: lighten($light_grey, 2%);
+      background-color: darken($white, 5%);
+    }
+    &:hover, &:focus {
+      color: lighten($dark_pink,2%);
     }
     &:focus {
-      background-color: darken($light_grey, 5%);
+      background-color: darken($white, 10%);
     }
   }
 

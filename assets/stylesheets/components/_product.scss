@@ -1,20 +1,24 @@
-$product__image--width: 180px;
-$product__image--height: 120px;
+$product__image--width: 270px;
+$product__image--height: 180px;
 
 .product {
+  clear: both;
   position: relative;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
   padding-top: 0.35rem;
   @include width-from($medium_device) {
-    margin-bottom: 4em;
+    margin-bottom: 6em;
   }
 }
 
 .product__name {
   margin-top: 0;
   margin-bottom: .5rem;
-  @include font-size(20px);
+  @include font-size(24px);
   color: $dark_cyan;
+  @include width-from($medium_device) {
+    @include font-size(28px);
+  }
 }
 
 .product__description {
@@ -22,6 +26,9 @@ $product__image--height: 120px;
   margin-bottom: 1rem;
   line-height: 1.35;
   @include font-size(16px);
+  @include width-from($medium_device) {
+    @include font-size(18px);
+  }
 }
 
 .product__image {

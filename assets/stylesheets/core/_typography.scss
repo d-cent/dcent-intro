@@ -1,5 +1,23 @@
+.page_title {
+  margin-top: 0;
+  margin-bottom: 0;
+  @include font-size(28px);
+  line-height: 1.1;
+  color: $white;
+  font-weight: bold;
+  @include width-from($small_device) {
+    @include font-size(30px);
+  }
+  @include width-from($medium_device) {
+    @include font-size(36px);
+  }
+}
 .lede {
-  @include font-size(24px);
-  color: $darker_grey;
+  @include font-size(18px);
+  line-height: 1.2;
+  color: $white;
   font-weight: 100;
+  @include width-from($medium_device) {
+    @include font-size(20px);
+  }
 }

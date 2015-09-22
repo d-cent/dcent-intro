@@ -5,23 +5,26 @@
 @import "core/typography";
 @import "core/header";
 
+@import "components/grid";
 @import "components/product";
 @import "components/buttons";
+@import "components/facts";
 
 .main-content {
-  max-width: $medium_device;
+  max-width: $extra_large_device;
   margin: 0 auto;
   padding-bottom: 1rem;
-  padding-left: .75rem;
-  padding-right: .75rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   @include width-from($medium_device) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 }
 
 .intro {
-  margin-bottom: 1.5rem;
+  max-width: $large_device;
+  margin: 0 auto 1.5rem auto;
   @include width-from($medium_device) {
     margin-bottom: 3rem;
   }
