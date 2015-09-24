@@ -1,3 +1,7 @@
+@mixin photo-shadow {
+  text-shadow: 0 2px 1px rgba(0,0,0,0.5);
+}
+
 .page_title {
   margin-top: 0;
   margin-bottom: 0;
@@ -5,6 +9,9 @@
   line-height: 1.1;
   color: $white;
   font-weight: bold;
+  &--shadow {
+    @include photo-shadow;
+  }
   @include width-from($small_device) {
     @include font-size(30px);
   }
@@ -16,7 +23,10 @@
   @include font-size(18px);
   line-height: 1.2;
   color: $white;
-  font-weight: 100;
+  font-weight: 500;
+  &--shadow {
+    @include photo-shadow;
+  }
   @include width-from($medium_device) {
     @include font-size(20px);
   }

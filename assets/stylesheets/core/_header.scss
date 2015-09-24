@@ -2,23 +2,28 @@ $header_logo_image_path: 'd-cent.svg';
 
 .header {
   @include clearfix;
-  height: 480px;
+  height: 100vh;
+  max-height: $medium_device;
   margin-bottom: 2rem;
-  background-color: $header_background_color;
+  background: $header_background_color image-url('background--small.jpg') repeat-x 0 50%;
+  background-size: cover;
   @include width-from($medium_device) {
+    height: 400px;
     margin-bottom: 3rem;
+    background-image: image-url('background--medium.jpg');
+    background-position: 50% 50%;
   }
 }
 
 .header__inner {
   position: relative;
-  padding-top: 3rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   text-align: center;
   @include width-from($medium_device) {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    //padding-left: 1rem;
+    //padding-right: 1rem;
   }
 }
 
@@ -29,4 +34,8 @@ $header_logo_image_path: 'd-cent.svg';
   margin-right: auto;
   background: image-url($header_logo_image_path) no-repeat 50% 50%;
   background-size: contain;
+}
+
+.header__intro {
+
 }

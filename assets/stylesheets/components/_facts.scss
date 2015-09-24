@@ -3,6 +3,19 @@
   margin-bottom: 3rem;
 }
 
+.icon-open {
+  background-image: image-url('open.svg');
+}
+.icon-distribution {
+  background-image: image-url('distribution.svg');
+}
+.icon-data {
+  background-image: image-url('data.svg');
+}
+.icon-blockchain {
+  background-image: image-url('blockchain.svg');
+}
+
 .fact-item {
   @include column-one-half();
   margin-bottom: 2rem;
@@ -19,8 +32,10 @@
     max-width: 120px;
     margin-left: auto;
     margin-right: auto;
-    border: 2px solid $dark_cyan;
-    border-radius: 50%;
+    border: 1px solid transparent;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 75%;
     &:before {
       content: '';
       display: block;

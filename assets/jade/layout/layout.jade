@@ -21,16 +21,5 @@ html
     block headerScripts
 
   body(class="#{bodyClass}")
-    .header(role="banner")
-      .header__inner.middle-container
-        .header__logo
-          span.visuallyhidden D-Cent
-        h1.page_title Technologies for the 21st Century democracy
-        .intro
-          p.lede D-CENT is a Europe-wide project creating privacy-aware tools and applications for direct democracy and economic empowerment.
-          p We have a number of offerings to help social engagement within your organisation:
-          a.button.button--white(href="#readmore") Read more
-
-    .main-content
-      block content
+    block content
     block footerScripts

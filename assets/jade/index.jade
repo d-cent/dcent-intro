@@ -22,41 +22,50 @@ block title
 block headerScripts
 
 block content
+  .header(role="banner")
+    .header__inner.middle-container
+      .header__logo
+        span.visuallyhidden D-Cent
+      h1.page_title.page_title--shadow Technologies for the 21st Century democracy
+      .header__intro
+        p.lede.lede--shadow D-CENT is a Europe-wide project creating privacy-aware tools and applications for direct democracy and economic empowerment.
+        a.button.button--white(href="#readmore") Read more
 
-  .facts
-    .fact-item
-      .fact-item__icon
-      p.fact-item_text
-        strong Open source and open standards
-        = " "
-        | to share knowledge
-    .fact-item
-      .fact-item__icon
-      p.fact-item_text
-        strong Citizens ownership of data
-        = " "
-        | to say no to surveillance and economic exploration of our data and knowledege and give back citizens control and ownership
-    .fact-item
-      .fact-item__icon
-      p.fact-item_text
-        strong Shared and distributed authentication and identity management
-        = " "
-        | to grow the eco-system
-    .fact-item
-      .fact-item__icon
-      p.fact-item_text
-        strong Blockchain trust
-        = " "
-        | to let people run reward schemes that are transparent auditable to other organisations
+  .main-content
+    .facts
+      .fact-item
+        .fact-item__icon.icon-open
+        p.fact-item_text
+          strong Open source and open standards
+          = " "
+          | to share knowledge
+      .fact-item
+        .fact-item__icon.icon-data
+        p.fact-item_text
+          strong Citizens ownership of data
+          = " "
+          | to say no to surveillance and economic exploration of our data and knowledege and give back citizens control and ownership
+      .fact-item
+        .fact-item__icon.icon-distribution
+        p.fact-item_text
+          strong Shared and distributed authentication and identity management
+          = " "
+          | to grow the eco-system
+      .fact-item
+        .fact-item__icon.icon-blockchain
+        p.fact-item_text
+          strong Blockchain trust
+          = " "
+          | to let people run reward schemes that are transparent auditable to other organisations
 
-  +addProduct("Objective8", "#demo", "#gitURL")
-    | Readymade salvia vegan, locavore fap farm-to-table keytar Pitchfork listicle meh lomo 8-bit whatever scenester VHS.
+    +addProduct("Objective8", "#demo", "#gitURL")
+      | Readymade salvia vegan, locavore fap farm-to-table keytar Pitchfork listicle meh lomo 8-bit whatever scenester VHS.
 
-  +addProduct("Open authentication", "#demo", "#gitURL")
-    | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
+    +addProduct("Open authentication", "#demo", "#gitURL")
+      | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
 
-  +addProduct("Secure notifications", "#demo", "#gitURL")
-    | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
+    +addProduct("Secure notifications", "#demo", "#gitURL")
+      | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
 
-  +addProduct("Electronic voting", "#demo", "#gitURL")
-    | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
+    +addProduct("Electronic voting", "#demo", "#gitURL")
+      | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.

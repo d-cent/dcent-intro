@@ -6,7 +6,9 @@ $product__image--height: 180px;
   position: relative;
   margin-bottom: 3em;
   padding-top: 0.35rem;
+  text-align: center;
   @include width-from($medium_device) {
+    text-align: left;
     margin-bottom: 6em;
   }
 }
