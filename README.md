@@ -37,4 +37,4 @@ gulp deploy
 
 ###Visit:
 
-[username.github.io/repo-name](http://username.github.io/repo-name/)
+[http://thoughtworksinc.github.io/dcent-intro/](http://thoughtworksinc.github.io/dcent-intro/)
