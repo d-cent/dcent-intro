@@ -7,7 +7,7 @@ var gulp = require('gulp'),
     autoprefixer = require('gulp-autoprefixer'),
     minifyCSS = require('gulp-minify-css'),
     imagemin = require('gulp-imagemin'),
-    browsersync = require('browser-sync'),
+    browsersync = require('browser-sync').create(),
     open = require("gulp-open"),
     del = require('del'),
     runSequence = require('run-sequence'),
@@ -104,12 +104,17 @@ gulp.task('bs-reload', function () {
 });
 
 gulp.task('browser-sync', ['nodemon'], function () {
-  return browsersync.init(null, {
-    proxy: "localhost:5050",  // local node app address
-    port: dev_path.port,  // use *different* port than above
-    notify: true,
-    open: false
-  })
+    return browsersync.init(null, {
+        proxy: "localhost:5050",  // local node app address
+        port: dev_path.port,  // use *different* port than above
+        notify: true,
+        open: false,
+        files: [build_path.images,
+            dev_path.jade,
+            dev_path.favicons,
+            dev_path.js,
+            build_path.css]
+    })
 });
 
 gulp.task('url', function () {
