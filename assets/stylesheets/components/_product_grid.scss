@@ -1,10 +1,9 @@
 .product-grid {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
   @include width-from($medium_device) {
     display: flex;
-    //flex-direction: column;
     flex-wrap: wrap;
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
   }
   &__group {
     @include width-from($medium_device) {

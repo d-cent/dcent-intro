@@ -4,12 +4,14 @@ $product--padding: 1.5rem;
 
 .product {
   position: relative;
-  margin: 0.5em;
+  margin-bottom: 1em;
   padding: $product--padding;
   text-align: center;
+  color: $dark_cyan;
   border: 1px solid $dark_cyan;
   border-radius: 3px;
   @include width-from($medium_device) {
+    margin: 0.5em;
     flex: 1;
     text-align: left;
     padding-bottom: 7rem;
@@ -20,10 +22,10 @@ $product--padding: 1.5rem;
 }
 
 .product__name {
+  line-height: 1;
   margin-top: 0;
-  margin-bottom: .5rem;
+  margin-bottom: .75rem;
   @include font-size(24px);
-  color: $dark_cyan;
   @include width-from($medium_device) {
     @include font-size(36px);
   }
