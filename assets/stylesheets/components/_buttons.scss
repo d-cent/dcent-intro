@@ -6,7 +6,7 @@
   padding: 17px 22px;
   @include font-size(18px);
   background-color: $dark_cyan;
-  text-align: left;
+  text-align: center;
   color: $white;
   font-weight: bold;
   text-decoration: none;
@@ -38,6 +38,8 @@
   // make it so
   &--full-width {
     width: 100%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   // secondary action
@@ -53,6 +55,22 @@
     &:focus {
       background-color: darken($white, 10%);
     }
+  }
+
+  &--outline {
+    background-color: transparent;
+    color: $dark_cyan;
+    border: 1px solid $dark_cyan;
+    &:hover {
+      background-color: transparent;
+    }
+    &:hover, &:focus {
+      color: lighten($dark_cyan,2%);
+    }
+    &:focus {
+      background-color: darken($white, 10%);
+    }
+
   }
 
   // Less prominent

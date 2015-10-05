@@ -1,0 +1,29 @@
+.product-grid {
+  margin-left: -0.5rem;
+  margin-right: -0.5rem;
+  @include width-from($medium_device) {
+    display: flex;
+    //flex-direction: column;
+    flex-wrap: wrap;
+  }
+  &__group {
+    @include width-from($medium_device) {
+      display: flex;
+      flex-basis: 100%;
+    }
+    @include width-from($large_device) {
+      flex: 1;
+    }
+    &--two-thirds {
+      @include width-from($large_device) {
+        flex: 2;
+      }
+    }
+  }
+  &__sub-group {
+    @include width-from($medium_device) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+}

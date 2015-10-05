@@ -1,16 +1,14 @@
 extends layout/layout
 
-mixin addProduct(title, demoURL, gitURL)
-  .product
-    .product__image
-      +imageIncludeTag('temp.png', 'product__image-img')
+mixin addProduct(title, demoURL, gitURL, productClass, linkClass)
+  .product(class=productClass)
     .product__text
       h2.product__name #{title}
       p.product__description
         block
-    ul.product-links
-      li.product-links__item: a.button(href="#{demoURL}") Demo
-      li.product-links__item: a.button(href="#{gitURL}") Github
+    ul.product-links(class=linkClass)
+      li.product-links__item: a.button.button--full-width.button--outline(href="#{demoURL}") Demo
+      li.product-links__item: a.button.button--full-width.button--outline(href="#{gitURL}") Github
 
 
 block vars
@@ -33,6 +31,9 @@ block content
 
   .main-content
     .facts
+      .fact-header
+        h2.fact-headline A federated architecture
+        p.fact-description on open standards, open APIs and a shared identity system to allow for the growth of an eco-system of modular, interoperable and decentralised tools
       .fact-item
         .fact-item__icon.icon-open
         p.fact-item_text
@@ -58,14 +59,18 @@ block content
           = " "
           | to let people run reward schemes that are transparent auditable to other organisations
 
-    +addProduct("Objective8", "#demo", "#gitURL")
-      | Readymade salvia vegan, locavore fap farm-to-table keytar Pitchfork listicle meh lomo 8-bit whatever scenester VHS.
 
-    +addProduct("Open authentication", "#demo", "#gitURL")
-      | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
-
-    +addProduct("Secure notifications", "#demo", "#gitURL")
-      | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
-
-    +addProduct("Electronic voting", "#demo", "#gitURL")
-      | Blue Bottle cray tilde four dollar toast fap, pop-up cornhole occupy migas.
+    .product-grid
+      .product-grid__group.product-grid__group--two-thirds
+        .product-grid__sub-group
+          +addProduct("Mooncake", "#demo", "#gitURL", "product--full-width", "product-links--align-right")
+            | Secure notifications - get notified on issues and decisions that are relevant to you
+          +addProduct("Freecoin", "#demo", "#gitURL")
+            | Complementary currency toolkit
+          +addProduct("Objective8", "#demo", "#gitURL")
+            | Propose ideas and collaborate on policy drafting
+      .product-grid__group
+        +addProduct("Electronic voting", "#demo", "#gitURL")
+          | Secure electronic voting system
+      +addProduct("Stonecutter", "#demo", "#gitURL", "product--full-width", "product-links--align-right")
+        | Open authentication and identity management. One log-in for using D-CENT tools and other applications
