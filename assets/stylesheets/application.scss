@@ -11,9 +11,10 @@
 @import "components/facts";
 @import "components/product_grid";
 @import "components/tool_item";
-@import "components/social-links";
-@import "components/project-partner";
-@import 'components/step-list';
+@import "components/social_links";
+@import "components/project_partner";
+@import 'components/step_list';
+@import 'components/icons';
 
 .intro {
   max-width: $large_device;
