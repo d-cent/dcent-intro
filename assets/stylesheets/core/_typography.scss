@@ -13,6 +13,7 @@ a {
   line-height: 1.1;
   color: $white;
   font-weight: bold;
+  font-family: $heading_title_font_family;
   &--shadow {
     @include photo-shadow;
   }
@@ -44,6 +45,7 @@ a {
   @include font-size(26px);
   line-height: 1.1;
   font-weight: bold;
+  font-family: $heading_title_font_family;
   @include width-from($medium_device) {
     @include font-size(32px);
   }

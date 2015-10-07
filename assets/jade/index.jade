@@ -27,7 +27,7 @@ block content
       h1.page_title.page_title--shadow Technologies for 21st Century democracy
       .header__intro
         p.lede.lede--shadow D-CENT is a Europe-wide project creating privacy-aware tools and applications for direct democracy and economic empowerment.
-        a.button.button--white(href="#readmore") Read more
+        a.button.button--white(href="http://dcentproject.eu") Read more
 
 
   .step-list-container
@@ -102,36 +102,40 @@ block content
       .tool_list
         h2.section-title D-CENT tools in action
         .tool-item
-          .tool-item__image
-            +imageIncludeTag('screenshots/barcelona.png', 'tool-item__image-img', {alt: 'Barcelona screenshot'})
-          .tool-item__text
-            h3.tool-item__title Barcelona
-            p.tool-item__description Participation platform of Barcelona en Comú, opening the political coalition for horizontal participation by citizens, and used for collaborative drafting of their ethical code leading up to their victory in the municipal elections.
-            a.button(href="https://participa.barcelonaencomu.cat/ca") Visit
+          a.tool-item__link(href="https://participa.barcelonaencomu.cat/ca")
+            .tool-item__image
+              +imageIncludeTag('screenshots/barcelona.png', 'tool-item__image-img', {alt: 'Barcelona screenshot'})
+            .tool-item__text
+              h3.tool-item__title Barcelona
+              p.tool-item__description Participation platform of Barcelona en Comú, opening the political coalition for horizontal participation by citizens, and used for collaborative drafting of their ethical code leading up to their victory in the municipal elections.
+              .button Visit
 
         .tool-item
-          .tool-item__image
-            +imageIncludeTag('screenshots/reykjavik.png', 'tool-item__image-img', {alt: 'Reykjavik screenshot'})
-          .tool-item__text
-            h3.tool-item__title Reykjavik
-            p.tool-item__description Participatory budgeting platform for the city of Reykjavik. The platform is a development from the Betri Reykjavik prioritisation and participation platform allowing.
-            a.button(href="http://reykjavik.is/betrihverfi") Visit
+          a.tool-item__link(href="http://reykjavik.is/betrihverfi")
+            .tool-item__image
+              +imageIncludeTag('screenshots/reykjavik.png', 'tool-item__image-img', {alt: 'Reykjavik screenshot'})
+            .tool-item__text
+              h3.tool-item__title Reykjavik
+              p.tool-item__description Participatory budgeting platform for the city of Reykjavik. The platform is a development from the Betri Reykjavik prioritisation and participation platform allowing citizens to submit ideas on how to spend a part of the city budget in their neighborhood.
+              .button Visit
 
         .tool-item
-          .tool-item__image
-            +imageIncludeTag('screenshots/helsinki.png', 'tool-item__image-img', {alt: 'Helsinki screenshot'})
-          .tool-item__text
-            h3.tool-item__title Helsinki
-            p.tool-item__description Notifications of municipal policy decisions. Using the municipal open API on town hall agendas, the platform allows citizens to sign up to be notified when decisions are made about issues that concern them.
-            a.button(href="https://decisions.dcentproject.eu/") Visit
+          a.tool-item__link(href="https://decisions.dcentproject.eu/")
+            .tool-item__image
+              +imageIncludeTag('screenshots/helsinki.png', 'tool-item__image-img', {alt: 'Helsinki screenshot'})
+            .tool-item__text
+              h3.tool-item__title Helsinki
+              p.tool-item__description Notifications of municipal policy decisions. Using the municipal open API on town hall agendas, the platform allows citizens to sign up to be notified when decisions are made about issues that concern them.
+              .button Visit
 
         .tool-item
-          .tool-item__image
-            +imageIncludeTag('screenshots/madrid.png', 'tool-item__image-img', {alt: 'Madrid screenshot'})
-          .tool-item__text
-            h3.tool-item__title Madrid
-            p.tool-item__description Open consultation and direct democracy platform. Launched by the Ahora Madrid coalition after the recent municipal elections, citizens are able to propose, debate, prioritise and implement policy for the city.
-            a.button(href="https://decide.madrid.es/") Visit
+          a.tool-item__link(href="https://decide.madrid.es/")
+            .tool-item__image
+              +imageIncludeTag('screenshots/madrid.png', 'tool-item__image-img', {alt: 'Madrid screenshot'})
+            .tool-item__text
+              h3.tool-item__title Madrid
+              p.tool-item__description Open consultation and direct democracy platform. Launched by the Ahora Madrid coalition after the recent municipal elections, citizens are able to propose, debate, prioritise and implement policy for the city.
+              .button Visit
 
   .social-links
     ul.social-links-list

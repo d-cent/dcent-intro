@@ -92,6 +92,7 @@
 .fact-headline {
   margin-top: 0;
   margin-bottom: .5rem;
+  font-family: $heading_title_font_family;
   @include font-size(24px);
   @include width-from($medium_device) {
     @include font-size(36px);

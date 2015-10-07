@@ -6,6 +6,9 @@
   @include clearfix;
   margin-bottom: 3rem;
   color: $dark_cyan;
+  &__link {
+   display: block;
+  }
   &__text {
     text-align: center;
     @include width-from($medium_device) {
@@ -14,10 +17,12 @@
     }
   }
   &__title {
-    line-height: 1.1;
     margin-top: 0;
     margin-bottom: 1rem;
+    font-family: $heading_title_font_family;
+    line-height: 1.1;
     letter-spacing: -0.02rem;
+    cursor: default;
     @include font-size(24px);
     @include width-from($large_device) {
       @include font-size(29px);
@@ -30,6 +35,7 @@
     margin-top: 0;
     margin-bottom: 1rem;
     line-height: 1.35;
+    cursor: default;
     @include font-size(16px);
     @include width-from($medium_device) {
       @include font-size(18px);
