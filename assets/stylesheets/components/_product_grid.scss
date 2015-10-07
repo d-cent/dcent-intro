@@ -1,16 +1,11 @@
-.product-grid-container {
-  background: $light_grey;
-  padding-left: 1em;
-  padding-right: 1em;
-}
 .product-grid {
   max-width: $extra_large_device;
   margin: 0 auto;
-  padding-top: 3em;
   padding-bottom: 3em;
   @include width-from($medium_device) {
     display: flex;
     flex-wrap: wrap;
+    justify-content: stretch;
   }
   &__group {
     @include width-from($medium_device) {

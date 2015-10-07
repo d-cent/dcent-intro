@@ -1,4 +1,5 @@
 .facts {
+  padding-top: 3rem;
   margin-bottom: 3rem;
   @include width-from($medium_device) {
     display: flex;

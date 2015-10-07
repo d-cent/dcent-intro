@@ -6,29 +6,66 @@ $product--padding: 1.5rem;
   position: relative;
   margin-bottom: 1em;
   padding: $product--padding;
-  background-color: $white;
+  background-color: $dark_pink;
   text-align: center;
-  color: $dark_cyan;
-  border: 1px solid $dark_cyan;
+  color: $white;
   border-radius: 3px;
+  &--secure-notifications {
+    background-color: #b19442;
+  }
+  &--block-chain {
+    background-color: #93548c;
+  }
+  &--collaborative-policy {
+    background-color: #29767d;
+  }
+  &--electronic-voting {
+    background-color: #36898f;
+  }
+  &--open-auth {
+    background-color: #681857;
+  }
+
   @include width-from($medium_device) {
     margin: 0.5em;
+    display: flex;
     flex: 1;
     text-align: left;
-    padding-bottom: 7rem;
+    padding-bottom: 6rem;
+    justify-content: center;
+    //align-content: flex-start;
     &--full-width {
       flex-basis: 100%;
+    }
+  }
+
+  &__text {
+    @include width-from($medium_device) {
+      flex: 1;
+      align-self: flex-end;
+      padding-top: 1.5rem;
+      padding-right: 0.5rem;
+      &--align-middle {
+        align-self: center;
+      }
     }
   }
 }
 
 .product__name {
-  line-height: 1;
+  line-height: 1.1;
   margin-top: 0;
-  margin-bottom: .75rem;
+  margin-bottom: 1rem;
+  letter-spacing: -0.02rem;
   @include font-size(24px);
   @include width-from($medium_device) {
-    @include font-size(36px);
+    //@include font-size(34px);
+  }
+  @include width-from($large_device) {
+    @include font-size(29px);
+  }
+  @include width-from($extra_large_device) {
+    @include font-size(34px);
   }
 }
 
@@ -69,13 +106,13 @@ $product--padding: 1.5rem;
     bottom: $product--padding;
     left: $product--padding;
     right: $product--padding;
-    max-width: 254px;
+    max-width: 270px;
     margin-left: -0.5rem;
     margin-right: -0.5rem;
   }
   &--align-right {
     @include width-from($medium_device) {
-      left: calc(100% - 254px);
+      left: calc(100% - 270px);
       right: $product--padding;
     }
   }

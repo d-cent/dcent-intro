@@ -4,12 +4,10 @@ $header_logo_image_path: 'd-cent.svg';
   @include clearfix;
   height: 100vh;
   max-height: $medium_device;
-  margin-bottom: 2rem;
   background: $header_background_color image-url('background--small.jpg') repeat-x 0 50%;
   background-size: cover;
   @include width-from($medium_device) {
     height: 400px;
-    margin-bottom: 3rem;
     background-image: image-url('background--medium.jpg');
     background-position: 50% 50%;
   }

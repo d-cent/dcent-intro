@@ -2,6 +2,10 @@
   text-shadow: 0 2px 1px rgba(0,0,0,0.5);
 }
 
+a {
+  color: inherit;
+}
+
 .page_title {
   margin-top: 0;
   margin-bottom: 0;
@@ -29,5 +33,21 @@
   }
   @include width-from($medium_device) {
     @include font-size(20px);
+  }
+}
+
+.section-title {
+  color: $dark_grey;
+  text-align: center;
+  margin-top: 1.5rem;
+  margin-bottom: 2.5rem;
+  @include font-size(26px);
+  line-height: 1.1;
+  font-weight: bold;
+  @include width-from($medium_device) {
+    @include font-size(32px);
+  }
+  &--light {
+    color: $white;
   }
 }

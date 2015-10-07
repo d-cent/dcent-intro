@@ -1,0 +1,62 @@
+.tool_list {
+
+}
+
+.tool-item {
+  margin-bottom: 3rem;
+  color: $dark_cyan;
+  &__text {
+    text-align: center;
+    @include width-from($medium_device) {
+      margin-left: 40%;
+      text-align: left;
+    }
+  }
+  &__title {
+    line-height: 1.1;
+    margin-top: 0;
+    margin-bottom: 1rem;
+    letter-spacing: -0.02rem;
+    @include font-size(24px);
+    @include width-from($large_device) {
+      @include font-size(29px);
+    }
+    @include width-from($extra_large_device) {
+      @include font-size(34px);
+    }
+  }
+  &__description {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.35;
+    @include font-size(16px);
+    @include width-from($medium_device) {
+      @include font-size(18px);
+    }
+  }
+  &__link {
+    text-decoration: none;
+    @include font-size(16px);
+    @include width-from($medium_device) {
+      @include font-size(18px);
+    }
+  }
+
+  &__image {
+    display: none;
+    border-radius: 3px;
+    background: red;
+    @include width-from($medium_device) {
+      display: block;
+      float: left;
+      width: 35%;
+      height: 190px;
+      padding-right: 20px;
+    }
+  }
+  &__image-img {
+    width: 100%;
+    height: auto;
+    border-radius: inherit;
+  }
+}

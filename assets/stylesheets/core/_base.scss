@@ -1,6 +1,11 @@
 .middle-container {
   max-width: $extra_large_device;
-  //padding: 0 1rem;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  @include width-from($medium_device) {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
 }

@@ -10,23 +10,23 @@
 @import "components/buttons";
 @import "components/facts";
 @import "components/product_grid";
-
-.main-content {
-  max-width: $extra_large_device;
-  margin: 0 auto;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  @include width-from($medium_device) {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
+@import "components/tool_item";
+@import "components/social-links";
+@import "components/project-partner";
 
 .intro {
   max-width: $large_device;
   margin: 0 auto 1.5rem auto;
   @include width-from($medium_device) {
     margin-bottom: 3rem;
+  }
+}
+
+.middle-container-wrapper {
+  background: $light_grey;
+  padding: 1em;
+  @include width-from($medium_device) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }

@@ -59,13 +59,13 @@
 
   &--outline {
     background-color: transparent;
-    color: $dark_cyan;
-    border: 1px solid $dark_cyan;
+    color: $white;
+    border: 1px solid rgba($white, 0.5);
     &:hover {
-      background-color: transparent;
+      background-color: rgba($black, 0.2);
     }
     &:hover, &:focus {
-      color: lighten($dark_cyan,2%);
+      color: $white;
     }
     &:focus {
       background-color: darken($white, 10%);

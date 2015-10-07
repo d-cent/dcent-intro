@@ -1,0 +1,32 @@
+.project-partners {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #82bec1;
+  @include width-from($medium_device) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
+
+.project-partner-list {
+  @include reset-list;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: $monster_large_device;
+  margin-left: auto;
+  margin-right: auto;
+}
+.project-partner {
+  background: $white;
+  margin: 1rem;
+  &__link {
+    display: block;
+    width: 85px;
+    height: 46px;
+    @include width-from($medium_device) {
+      width: 170px;
+      height: 92px;
+    }
+  }
+}

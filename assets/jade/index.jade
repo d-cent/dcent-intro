@@ -1,8 +1,8 @@
 extends layout/layout
 
-mixin addProduct(title, demoURL, gitURL, productClass, linkClass)
+mixin addProduct(title, demoURL, gitURL, productClass, textClass, linkClass)
   .product(class=productClass)
-    .product__text
+    .product__text(class=textClass)
       h2.product__name #{title}
       p.product__description
         block
@@ -24,55 +24,113 @@ block content
     .header__inner.middle-container
       .header__logo
         span.visuallyhidden D-Cent
-      h1.page_title.page_title--shadow Technologies for the 21st Century democracy
+      h1.page_title.page_title--shadow Technologies for 21st Century democracy
       .header__intro
         p.lede.lede--shadow D-CENT is a Europe-wide project creating privacy-aware tools and applications for direct democracy and economic empowerment.
         a.button.button--white(href="#readmore") Read more
 
-  .main-content
+  .middle-container-wrapper
+    h2.section-title D-CENT tools
+    .product-grid
+      .product-grid__group.product-grid__group--two-thirds
+        .product-grid__sub-group
+          +addProduct("Secure Notifications", "#demo", "https://github.com/ThoughtWorksInc/mooncake", "product--secure-notifications product--full-width", "", "product-links--align-right")
+            | Get notified on issues and decisions that are relevant to you
+          +addProduct("Blockchain reward scheme", "#demo", "#gitURL", "product--block-chain")
+            | Complementary currency toolkit
+          +addProduct("Collaborative policy making", "https://objective8.dcentproject.eu", "https://github.com/ThoughtWorksInc/objective8", "product--collaborative-policy")
+            | Propose ideas and collaborate on policy drafting
+      .product-grid__group
+        +addProduct("Electronic voting", "#demo", "#gitURL", "product--electronic-voting", "product__text--align-middle")
+          | Secure electronic voting system
+      +addProduct("Open Authentication", "#demo", "https://github.com/ThoughtWorksInc/stonecutter", "product--open-auth product--full-width", "", "product-links--align-right")
+        | Open authentication and identity management. One log-in for using D-CENT tools and other applications
+
+  .middle-container
     .facts
       .fact-header
         h2.fact-headline A federated architecture
-        p.fact-description on open standards, open APIs and a shared identity system to allow for the growth of an eco-system of modular, interoperable and decentralised tools
+        p.fact-description based on open standards, open APIs and a shared identity system to allow for the growth of an eco-system of modular, interoperable and decentralised tools
       .facts__row
         .fact-item
           .fact-item__icon.icon-data
           p.fact-item_text
             strong Citizens ownership of data
             = " "
-            | to say no to surveillance and economic exploration of our data and knowledege and give back citizens control and ownership
+            | to say no to surveillance and give back citizens control and ownership of data
         .fact-item
           .fact-item__icon.icon-open
           p.fact-item_text
             strong Open source and open standards
             = " "
-            | to share knowledge
+            | to build and grow knowledge commons
       .facts__row
         .fact-item
           .fact-item__icon.icon-distribution
           p.fact-item_text
-            strong Shared and distributed authentication and identity management
+            strong Open authentication and distributed identity management
             = " "
-            | to grow the eco-system
+            | to grow an open source eco-system of citizen engagement tools
         .fact-item
           .fact-item__icon.icon-blockchain
           p.fact-item_text
             strong Blockchain trust
             = " "
-            | to let people run reward schemes that are transparent auditable to other organisations
+            | to let people run reward schemes that are transparent and auditable
 
-  .product-grid-container
-    .product-grid
-      .product-grid__group.product-grid__group--two-thirds
-        .product-grid__sub-group
-          +addProduct("Mooncake", "#demo", "#gitURL", "product--full-width", "product-links--align-right")
-            | Secure notifications - get notified on issues and decisions that are relevant to you
-          +addProduct("Freecoin", "#demo", "#gitURL")
-            | Complementary currency toolkit
-          +addProduct("Objective8", "#demo", "#gitURL")
-            | Propose ideas and collaborate on policy drafting
-      .product-grid__group
-        +addProduct("Electronic voting", "#demo", "#gitURL")
-          | Secure electronic voting system
-      +addProduct("Stonecutter", "#demo", "#gitURL", "product--full-width", "product-links--align-right")
-        | Open authentication and identity management. One log-in for using D-CENT tools and other applications
+  .middle-container-wrapper
+    .middle-container
+      .tool_list
+        h2.section-title D-CENT tools in action
+        .tool-item
+          .tool-item__image
+            .tool-item__image-img
+          .tool-item__text
+            h3.tool-item__title Barcelona
+            p.tool-item__description Participation platform of Barcelona en Comú, opening the political coalition for horizontal participation by citizens, and used for collaborative drafting of their ethical code leading up to their victory in the municipal elections.
+            a.button(href="https://participa.barcelonaencomu.cat/ca") Visit
+
+        .tool-item
+          .tool-item__image
+            .tool-item__image-img
+          .tool-item__text
+            h3.tool-item__title Reykjavik
+            p.tool-item__description Participatory budgeting platform for the city of Reykjavik. The platform is a development from the Betri Reykjavik prioritisation and participation platform allowing.
+            a.button(href="http://reykjavik.is/betrihverfi") Visit
+
+        .tool-item
+          .tool-item__image
+            .tool-item__image-img
+          .tool-item__text
+            h3.tool-item__title Helsinki
+            p.tool-item__description Notifications of municipal policy decisions. Using the municipal open API on town hall agendas, the platform allows citizens to sign up to be notified when decisions are made about issues that concern them.
+            a.button(href="https://decisions.dcentproject.eu/") Visit
+
+        .tool-item
+          .tool-item__image
+            .tool-item__image-img
+          .tool-item__text
+            h3.tool-item__title Madrid
+            p.tool-item__description Open consultation and direct democracy platform. Launched by the Ahora Madrid coalition after the recent municipal elections, citizens are able to propose, debate, prioritise and implement policy for the city.
+            a.button(href="https://decide.madrid.es/") Visit
+
+  //.social-links
+  //  ul.social-links-list
+  //    li.social-link: a.social-link__link(href="#") Email
+  //    li.social-link: a.social-link__link(href="#") ThoughtWork Github
+  //    li.social-link: a.social-link__link(href="#") D-CENT Github
+  //    li.social-link: a.social-link__link(href="#") Twitter
+
+  .project-partners
+    h2.section-title.section-title--light Project partners
+    ul.project-partner-list
+      li.project-partner: a.project-partner__link(href="#")
+      li.project-partner: a.project-partner__link(href="#")
+      li.project-partner: a.project-partner__link(href="#")
+      li.project-partner: a.project-partner__link(href="#")
+      li.project-partner: a.project-partner__link(href="#")
+      li.project-partner: a.project-partner__link(href="#")
+      li.project-partner: a.project-partner__link(href="#")
+      li.project-partner: a.project-partner__link(href="#")
+      li.project-partner: a.project-partner__link(href="#")
+      li.project-partner: a.project-partner__link(href="#")

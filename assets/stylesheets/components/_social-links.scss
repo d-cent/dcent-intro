@@ -1,0 +1,9 @@
+.social-links {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  background-color: #a8d3d7;
+  @include width-from($medium_device) {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+}
