@@ -3,6 +3,7 @@
 }
 
 .tool-item {
+  @include clearfix;
   margin-bottom: 3rem;
   color: $dark_cyan;
   &__text {
@@ -45,16 +46,16 @@
   &__image {
     display: none;
     border-radius: 3px;
-    background: red;
+    margin-bottom: 3rem;
     @include width-from($medium_device) {
       display: block;
       float: left;
       width: 35%;
-      height: 190px;
-      padding-right: 20px;
+      max-height: 190px;
     }
   }
   &__image-img {
+    display: block;
     width: 100%;
     height: auto;
     border-radius: inherit;

@@ -23,10 +23,20 @@
   &__link {
     display: block;
     width: 85px;
-    height: 46px;
+    height: 45px;
+    filter: grayscale(1);
+    transition: filter 250ms ease-in-out;
     @include width-from($medium_device) {
       width: 170px;
-      height: 92px;
+      height: 90px;
     }
+    &:hover {
+      filter: grayscale(0);
+    }
+  }
+  &__img {
+    display: block;
+    width: 100%;
+    height: auto;
   }
 }

@@ -57,6 +57,10 @@ $grid_gutter: 10px;
   @include column($breakpoint);
   width: 25%;
 }
+@mixin column-one-fifth($breakpoint:$medium_device) {
+  @include column($breakpoint);
+  width: 20%;
+}
 @mixin column-three-fourths($breakpoint:$medium_device) {
   @include column($breakpoint);
   width: 75%;
@@ -74,6 +78,10 @@ $grid_gutter: 10px;
 
 .one-fourth {
   @include column-one-fourth;
+}
+
+.one-fifth {
+  @include column-one-fifth;
 }
 
 .one-half {

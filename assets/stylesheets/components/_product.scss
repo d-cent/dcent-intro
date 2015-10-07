@@ -6,24 +6,33 @@ $product--padding: 1.5rem;
   position: relative;
   margin-bottom: 1em;
   padding: $product--padding;
-  background-color: $dark_pink;
   text-align: center;
   color: $white;
   border-radius: 3px;
   &--secure-notifications {
-    background-color: #b19442;
+    $color: #FFDB22;
+    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/notifications.jpg") no-repeat;
+    background-size: cover;
   }
   &--block-chain {
-    background-color: #93548c;
+    $color: #F77DE8;
+    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/blockchain.jpg") no-repeat;
+    background-size: cover;
   }
   &--collaborative-policy {
-    background-color: #29767d;
+    $color: #00D3CA;
+    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/collab-policy.jpg") no-repeat;
+    background-size: cover;
   }
   &--electronic-voting {
-    background-color: #36898f;
+    $color: #007E84;
+    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/evote.jpg") no-repeat;
+    background-size: cover;
   }
   &--open-auth {
-    background-color: #681857;
+    $color: #690055;
+    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/open-auth.jpg") no-repeat;
+    background-size: cover;
   }
 
   @include width-from($medium_device) {
@@ -90,6 +99,7 @@ $product--padding: 1.5rem;
     padding-left: 20px;
   }
 }
+
 .product__image-img {
   width: 100%;
   height: auto;

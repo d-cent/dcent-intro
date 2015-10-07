@@ -29,6 +29,25 @@ block content
         p.lede.lede--shadow D-CENT is a Europe-wide project creating privacy-aware tools and applications for direct democracy and economic empowerment.
         a.button.button--white(href="#readmore") Read more
 
+
+  .step-list-container
+    ul.step-list
+      li.step-item
+        .step-item__icon.icon--idea
+        .step-item__text Propose an idea
+      li.step-item
+        .step-item__icon.icon--debate
+        .step-item__text Debate options
+      li.step-item
+        .step-item__icon.icon--draft
+        .step-item__text Draft and scrutinise options
+      li.step-item
+        .step-item__icon.icon--vote
+        .step-item__text Vote and make collective decision
+      li.step-item
+        .step-item__icon.icon--reward
+        .step-item__text Implement decisions and run transparent rewards schemes
+
   .middle-container-wrapper
     h2.section-title D-CENT tools
     .product-grid
@@ -84,7 +103,7 @@ block content
         h2.section-title D-CENT tools in action
         .tool-item
           .tool-item__image
-            .tool-item__image-img
+            +imageIncludeTag('screenshots/barcelona.png', 'tool-item__image-img', {alt: 'Barcelona screenshot'})
           .tool-item__text
             h3.tool-item__title Barcelona
             p.tool-item__description Participation platform of Barcelona en Comú, opening the political coalition for horizontal participation by citizens, and used for collaborative drafting of their ethical code leading up to their victory in the municipal elections.
@@ -92,7 +111,7 @@ block content
 
         .tool-item
           .tool-item__image
-            .tool-item__image-img
+            +imageIncludeTag('screenshots/reykjavik.png', 'tool-item__image-img', {alt: 'Reykjavik screenshot'})
           .tool-item__text
             h3.tool-item__title Reykjavik
             p.tool-item__description Participatory budgeting platform for the city of Reykjavik. The platform is a development from the Betri Reykjavik prioritisation and participation platform allowing.
@@ -100,7 +119,7 @@ block content
 
         .tool-item
           .tool-item__image
-            .tool-item__image-img
+            +imageIncludeTag('screenshots/helsinki.png', 'tool-item__image-img', {alt: 'Helsinki screenshot'})
           .tool-item__text
             h3.tool-item__title Helsinki
             p.tool-item__description Notifications of municipal policy decisions. Using the municipal open API on town hall agendas, the platform allows citizens to sign up to be notified when decisions are made about issues that concern them.
@@ -108,7 +127,7 @@ block content
 
         .tool-item
           .tool-item__image
-            .tool-item__image-img
+            +imageIncludeTag('screenshots/madrid.png', 'tool-item__image-img', {alt: 'Madrid screenshot'})
           .tool-item__text
             h3.tool-item__title Madrid
             p.tool-item__description Open consultation and direct democracy platform. Launched by the Ahora Madrid coalition after the recent municipal elections, citizens are able to propose, debate, prioritise and implement policy for the city.
@@ -125,12 +144,26 @@ block content
     h2.section-title.section-title--light Project partners
     ul.project-partner-list
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/NESTA.png', 'project-partner__img', {alt: 'NESTA logo'})
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/ThoughtWorks.png', 'project-partner__img', {alt: 'ThoughtWorks logo'})
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/Dyne.png', 'project-partner__img', {alt: 'Dyne logo'})
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/CitizensFoundation.png', 'project-partner__img', {alt: 'Citizens Foundation logo'})
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/UOC.png', 'project-partner__img', {alt: 'UOC logo'})
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/ForumVirium.png', 'project-partner__img', {alt: 'Forum Virium logo'})
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/W3C.png', 'project-partner__img', {alt: 'W3C logo'})
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/CES.png', 'project-partner__img', {alt: 'CES logo'})
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/IMMI.png', 'project-partner__img', {alt: 'IMMI logo'})
       li.project-partner: a.project-partner__link(href="#")
+        +imageIncludeTag('partner-logos/OKFN.png', 'project-partner__img', {alt: 'OKFN logo'})
+
+
+
+
