@@ -4,10 +4,11 @@
   line-height: 1;
   border: none;
   padding: 17px 22px;
-  @include font-size(18px);
+  @include font-size(20px);
   background-color: $dark_cyan;
   text-align: center;
   color: $white;
+  font-family: $heading_title_font_family;
   font-weight: bold;
   text-decoration: none;
   transition: background 250ms ease, color 250ms ease, box-shadow 250ms ease, transform 250ms ease, border 250ms ease;
