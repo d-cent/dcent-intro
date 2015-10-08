@@ -11,26 +11,31 @@ $product--padding: 1.5rem;
   border-radius: 3px;
   &--secure-notifications {
     $color: #FFDB22;
+    background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/notifications.jpg") no-repeat;
     background-size: cover;
   }
   &--block-chain {
     $color: #F77DE8;
+    background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/blockchain.jpg") no-repeat;
     background-size: cover;
   }
   &--collaborative-policy {
     $color: #00D3CA;
+    background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/collab-policy.jpg") no-repeat;
     background-size: cover;
   }
   &--electronic-voting {
     $color: #007E84;
+    background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/evote.jpg") no-repeat;
     background-size: cover;
   }
   &--open-auth {
     $color: #690055;
+    background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/open-auth.jpg") no-repeat;
     background-size: cover;
   }

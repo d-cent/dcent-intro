@@ -8,11 +8,10 @@
   @include clearfix;
   max-width: $monster_large_device;
   margin: 0 auto;
-  display: flex;
-  justify-content: center;
+  text-align: center;
 }
 .social-link {
-  flex: 0 0 150px;
+  display: inline-block;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   padding-top: 0;

@@ -16,9 +16,10 @@
   max-width: $monster_large_device;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 .project-partner {
-  background: $white;
+  display: inline-block; // add for IE9
   margin: 1rem;
   &__link {
     display: block;
@@ -26,6 +27,7 @@
     height: 45px;
     filter: grayscale(1);
     transition: filter 250ms ease-in-out;
+    background: $white;
     @include width-from($medium_device) {
       width: 170px;
       height: 90px;
