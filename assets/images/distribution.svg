@@ -1,30 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Generator: Adobe Illustrator 19.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="115px" height="100px" viewBox="0 0 115 100" enable-background="new 0 0 115 100" xml:space="preserve">
-<g>
-	<line fill="none" stroke="#3F9EA3" stroke-width="2" stroke-miterlimit="10" x1="92.302" y1="51.944" x2="57.63" y2="32.006"/>
-	<line fill="none" stroke="#3F9EA3" stroke-width="2" stroke-miterlimit="10" x1="73.813" y1="61.514" x2="52.332" y2="75.071"/>
-	<line fill="none" stroke="#3F9EA3" stroke-width="2" stroke-miterlimit="10" x1="39.177" y1="68.293" x2="27.842" y2="55.134"/>
-	<rect x="19.684" y="65.815" fill="#3F9EA3" stroke="#3F9EA3" stroke-miterlimit="10" width="38.426" height="18.706"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.321" y1="74.233" x2="35.54" y2="74.233"/>
-	<line fill="none" stroke="#FFFFFF" stroke-width="2" stroke-miterlimit="10" x1="53.321" y1="78.286" x2="35.54" y2="78.286"/>
-	<rect x="25.721" y="73.102" fill="#FFFFFF" stroke="#F1F1F2" stroke-miterlimit="10" width="5.969" height="6.005"/>
-	
-		<rect x="72.254" y="50.349" fill="#FFFFFF" stroke="#3F9EA3" stroke-width="2" stroke-miterlimit="10" width="32.761" height="15.95"/>
-	<line fill="none" stroke="#3F9EA3" stroke-miterlimit="10" x1="100.934" y1="57.526" x2="85.773" y2="57.526"/>
-	<line fill="none" stroke="#3F9EA3" stroke-miterlimit="10" x1="100.934" y1="60.982" x2="85.773" y2="60.982"/>
-	<rect x="77.401" y="56.562" fill="#3F9EA3" width="5.089" height="5.118"/>
-	
-		<rect x="42.56" y="15.839" fill="#FFFFFF" stroke="#3F9EA3" stroke-width="2" stroke-miterlimit="10" width="32.762" height="15.95"/>
-	<line fill="none" stroke="#3F9EA3" stroke-miterlimit="10" x1="71.238" y1="23.016" x2="56.079" y2="23.016"/>
-	<line fill="none" stroke="#3F9EA3" stroke-miterlimit="10" x1="71.238" y1="26.471" x2="56.079" y2="26.471"/>
-	<rect x="47.708" y="22.052" fill="#3F9EA3" width="5.089" height="5.118"/>
-	
-		<rect x="13.206" y="39.184" fill="#FFFFFF" stroke="#3F9EA3" stroke-width="2" stroke-miterlimit="10" width="32.762" height="15.95"/>
-	<line fill="none" stroke="#3F9EA3" stroke-miterlimit="10" x1="41.884" y1="46.361" x2="26.725" y2="46.361"/>
-	<line fill="none" stroke="#3F9EA3" stroke-miterlimit="10" x1="41.884" y1="49.816" x2="26.725" y2="49.816"/>
-	<rect x="18.353" y="45.396" fill="#3F9EA3" width="5.089" height="5.119"/>
-</g>
+	 viewBox="-422 231 115 100" style="enable-background:new -422 231 115 100;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#007E84;}
+</style>
+<polygon class="st0" points="-329.8,282.1 -366.3,261.1 -364,259.8 -326.2,281.5 "/>
+<polygon class="st0" points="-369.9,310.1 -371.1,308.2 -348.6,293.9 -347.4,295.8 "/>
+<rect x="-401.4" y="293" transform="matrix(0.6526 0.7577 -0.7577 0.6526 86.8373 398.8982)" class="st0" width="19.5" height="2.2"/>
+<rect x="-407.7" y="298.2" class="st0" width="44.2" height="22.1"/>
+<rect x="-389.3" y="307.1" class="st1" width="20" height="2.2"/>
+<rect x="-389.3" y="311.6" class="st1" width="20" height="2.2"/>
+<rect x="-400.4" y="306.9" class="st0" width="6.7" height="6.7"/>
+<rect x="-400.9" y="306.4" class="st1" width="7.8" height="7.9"/>
+<rect x="-333" y="288.9" class="st0" width="17" height="1.1"/>
+<rect x="-333" y="292.8" class="st0" width="17" height="1.1"/>
+<rect x="-342.4" y="288.4" class="st0" width="5.7" height="5.7"/>
+<rect x="-366.3" y="250.2" class="st0" width="17" height="1.1"/>
+<rect x="-366.3" y="254" class="st0" width="17" height="1.1"/>
+<rect x="-375.7" y="249.6" class="st0" width="5.7" height="5.7"/>
+<rect x="-399.2" y="276.4" class="st0" width="17" height="1.1"/>
+<rect x="-399.2" y="280.2" class="st0" width="17" height="1.1"/>
+<rect x="-408.6" y="275.8" class="st0" width="5.7" height="5.7"/>
+<path class="st0" d="M-349.3,280.3v20.1h39v-20.1H-349.3z M-312.5,298.2H-347v-15.7h34.5V298.2z"/>
+<path class="st0" d="M-382.6,241.5v20.1h39v-20.1H-382.6z M-345.8,259.4h-34.5v-15.7h34.5V259.4z"/>
+<path class="st0" d="M-415.5,267.7v20.1h39v-20.1H-415.5z M-378.8,285.6h-34.5V270h34.5V285.6z"/>
 </svg>
