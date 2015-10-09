@@ -1,6 +1,7 @@
 $step--guttering: 5px;
 
 .step-group-container {
+  @include clearfix;
   display: block;
   max-width: $monster_large_device;
   margin-left: auto;
@@ -9,35 +10,77 @@ $step--guttering: 5px;
   padding-bottom: 3rem;
   text-decoration: none;
   color: inherit;
+  pointer-events: none;
 }
 
 .step-icon {
-  display: inline-block;
-  background: black;
-  @include size(100px);
+  background: $light_grey;
+  height: 100px;
+}
+
+.step__icon-title {
+  display: none;
+  font-family: $heading_title_font_family;
+  font-weight: bold;
+  color: $dark_cyan;
+  text-align: center;
 }
 
 .step-group {
-  @include columns($step--guttering);
+  @include clearfix;
   margin-left: $step--guttering;
   margin-right: $step--guttering;
   margin-bottom: $step--guttering * 2;
+  @include width-to($medium_device) {
+    float: left;
+    width: 40px;
+  }
 
   &--icons {
-    width: auto;
-    order: 1;
+    width: 150px;
+    order: 3;
+    @include width-from($medium_device) {
+      width: auto;
+    }
   }
 }
 
 .step {
   position: relative;
   text-align: center;
+  padding-bottom: 5px;
+
+  &:last-child .step__content {
+    //border-bottom: 0;
+  }
+
 
   &--quarter {
     @include column-one-fourth($medium_device, $step--guttering);
+
+    .step__content {
+      @include width-to($medium_device) {
+        height: 100px;
+        line-height: 100px;
+      }
+    }
   }
   &--three-quarter {
     @include column-three-fourths($medium_device, $step--guttering);
+
+    .step__content {
+      @include width-to($medium_device) {
+        height: 310px;
+        line-height: 310px;
+      }
+    }
+  }
+
+  &__title {
+    text-indent: -9999px;
+    @include width-from($medium_device) {
+      text-indent: 0;
+    }
   }
 
   //margin-bottom: 5px;
@@ -46,8 +89,17 @@ $step--guttering: 5px;
     color: $white;
     font-family: $heading_title_font_family;
     font-weight: bold;
-    @include font-size(20px);
-    padding: 1rem;
+    //border-bottom: 5px solid $white;
+    border-radius: 3px;
+
+    @include width-from($medium_device) {
+      height: auto;
+      padding: 1rem;
+      @include font-size(20px);
+      //border-bottom: 0;
+    }
+
+
     &--secure-notifications {
       $color: #FFDB22;
       background-color: $color;
