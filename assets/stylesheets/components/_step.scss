@@ -1,0 +1,74 @@
+$step--guttering: 5px;
+
+.step-group-container {
+  display: block;
+  max-width: $monster_large_device;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.step-icon {
+  display: inline-block;
+  background: black;
+  @include size(100px);
+}
+
+.step-group {
+  @include columns($step--guttering);
+  margin-left: $step--guttering;
+  margin-right: $step--guttering;
+  margin-bottom: $step--guttering * 2;
+
+  &--icons {
+    width: auto;
+    order: 1;
+  }
+}
+
+.step {
+  position: relative;
+  text-align: center;
+
+  &--quarter {
+    @include column-one-fourth($medium_device, $step--guttering);
+  }
+  &--three-quarter {
+    @include column-three-fourths($medium_device, $step--guttering);
+  }
+
+  //margin-bottom: 5px;
+
+  &__content {
+    color: $white;
+    font-family: $heading_title_font_family;
+    font-weight: bold;
+    @include font-size(20px);
+    padding: 1rem;
+    &--secure-notifications {
+      $color: #FFDB22;
+      background-color: $color;
+    }
+    &--block-chain {
+      $color: #F77DE8;
+      background-color: $color;
+    }
+    &--collaborative-policy {
+      $color: #00D3CA;
+      background-color: $color;
+    }
+    &--electronic-voting {
+      $color: #007E84;
+      background-color: $color;
+    }
+    &--open-auth {
+      $color: #690055;
+      background-color: $color;
+    }
+  }
+
+
+}

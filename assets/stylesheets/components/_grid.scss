@@ -5,14 +5,14 @@ $grid_gutter: 10px;
 // Create rows with `.columns` to clear the floated columns and outdent the
 // padding on `.column`s with negative margin for alignment.
 
-@mixin columns {
+@mixin columns($gutter: $grid_gutter) {
   @include clearfix;
-  margin-right: -$grid_gutter;
-  margin-left: -$grid_gutter;
+  margin-right: -$gutter;
+  margin-left: -$gutter;
 }
-@mixin column($breakpoint: $medium_device) {
-  padding-right: $grid_gutter;
-  padding-left: $grid_gutter;
+@mixin column($breakpoint: $medium_device, $gutter: $grid_gutter) {
+  padding-right: $gutter;
+  padding-left: $gutter;
   @include width-to($breakpoint) {
     float: none;
     width: 100%;
@@ -23,11 +23,11 @@ $grid_gutter: 10px;
   }
 }
 
-@mixin single-column {
+@mixin single-column($gutter: $grid_gutter) {
   width: 100%;
   float: none;
-  padding-right: $grid_gutter;
-  padding-left: $grid_gutter;
+  padding-right: $gutter;
+  padding-left: $gutter;
 }
 
 .columns {
@@ -39,30 +39,30 @@ $grid_gutter: 10px;
   @include column;
 }
 
-@mixin column-one-half($breakpoint:$medium_device) {
+@mixin column-one-half($breakpoint:$medium_device, $gutter: $grid_gutter) {
   $breakpoint: if($breakpoint, $breakpoint, 100px);
-  @include column($breakpoint);
+  @include column($breakpoint, $gutter);
   width: 50%;
 }
-@mixin column-one-third($breakpoint:$medium_device) {
-  @include column($breakpoint);
+@mixin column-one-third($breakpoint:$medium_device, $gutter: $grid_gutter) {
+  @include column($breakpoint, $gutter);
   width: 33.333333%;
 }
-@mixin column-two-thirds($breakpoint:$medium_device) {
-  @include column($breakpoint);
+@mixin column-two-thirds($breakpoint:$medium_device, $gutter: $grid_gutter) {
+  @include column($breakpoint, $gutter);
   width: 66.666667%;
 }
 
-@mixin column-one-fourth($breakpoint:$medium_device) {
-  @include column($breakpoint);
+@mixin column-one-fourth($breakpoint:$medium_device, $gutter: $grid_gutter) {
+  @include column($breakpoint, $gutter);
   width: 25%;
 }
-@mixin column-one-fifth($breakpoint:$medium_device) {
-  @include column($breakpoint);
+@mixin column-one-fifth($breakpoint:$medium_device, $gutter: $grid_gutter) {
+  @include column($breakpoint, $gutter);
   width: 20%;
 }
-@mixin column-three-fourths($breakpoint:$medium_device) {
-  @include column($breakpoint);
+@mixin column-three-fourths($breakpoint:$medium_device, $gutter: $grid_gutter) {
+  @include column($breakpoint, $gutter);
   width: 75%;
 }
 
