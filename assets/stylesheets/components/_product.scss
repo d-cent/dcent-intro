@@ -2,6 +2,11 @@ $product__image--width: 270px;
 $product__image--height: 180px;
 $product--padding: 1.5rem;
 
+.product-intro {
+  text-align: center;
+  color: $dark_grey;
+}
+
 .product {
   position: relative;
   margin-bottom: 1em;

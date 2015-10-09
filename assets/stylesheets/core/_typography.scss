@@ -27,7 +27,7 @@ a {
 .lede {
   @include font-size(18px);
   line-height: 1.2;
-  color: $white;
+  color: inherit;
   font-weight: 500;
   &--shadow {
     @include photo-shadow;

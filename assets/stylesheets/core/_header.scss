@@ -35,5 +35,8 @@ $header_logo_image_path: 'd-cent.svg';
 }
 
 .header__intro {
-
+  max-width: $large_device;
+  margin-left: auto;
+  margin-right: auto;
+  color: $white;
 }
