@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "All the tools",
   "main": "server.js",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ThoughtWorksInc/dcent-intro.git"
+  },
   "dependencies": {
     "express": "^4.10.1",
     "gulp": "^3.8.10",
