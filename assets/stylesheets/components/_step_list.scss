@@ -12,8 +12,17 @@
   margin-left: 0;
   margin-right: 0;
   @include width-from($medium_device) {
+    display: flex;
     padding-top: 3rem;
     padding-bottom: 3rem;
+  }
+}
+
+@mixin step-triangle($color) {
+  @include width-from($medium_device) {
+    &:after {
+      @include triangle('down', 15px, $color);
+    }
   }
 }
 
@@ -23,6 +32,32 @@
   color: $dark_cyan;
   text-align: center;
   margin-bottom: 1.25rem;
+  padding-bottom: 20px;
+
+  @include width-from($medium_device) {
+    padding-bottom: 70px;
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+
+  &--notify {
+    @include step-triangle($notify--color);
+  }
+  &--propose {
+    @include step-triangle($propose--color);
+  }
+  &--decide {
+    @include step-triangle($vote--color);
+  }
+  &--reward {
+    @include step-triangle($reward--color);
+  }
 
   &__icon {
     height: auto;

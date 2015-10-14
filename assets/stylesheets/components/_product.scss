@@ -7,6 +7,7 @@ $product--padding: 1.5rem;
   color: $dark_grey;
 }
 
+
 .product {
   position: relative;
   margin-bottom: 1em;
@@ -15,37 +16,37 @@ $product--padding: 1.5rem;
   color: $white;
   border-radius: 3px;
   &--secure-notifications {
-    $color: #FFDB22;
+    $color: $notify--color;
     background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/notifications.jpg") no-repeat;
     background-size: cover;
   }
   &--block-chain {
-    $color: #F77DE8;
+    $color: $reward--color;
     background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/blockchain.jpg") no-repeat;
     background-size: cover;
   }
   &--collaborative-policy {
-    $color: #00D3CA;
+    $color: $propose--color;
     background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/collab-policy.jpg") no-repeat;
     background-size: cover;
   }
   &--electronic-voting {
-    $color: #007E84;
+    $color: $vote--color;
     background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/evote.jpg") no-repeat 50% 50%;
     background-size: cover;
   }
   &--open-auth {
-    $color: #690055;
+    $color: $auth--color;
     background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/open-auth.jpg") no-repeat;
     background-size: cover;
   }
   &--funky {
-    $color: #690055;
+    $color: $auth--color;
     background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/open-auth.jpg") no-repeat;
     background-size: cover;
