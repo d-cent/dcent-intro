@@ -29,46 +29,32 @@ block content
         p.lede.lede--shadow D-CENT is a Europe-wide project creating privacy-aware tools and applications for direct democracy and economic empowerment.
         a.button.button--white(href="http://dcentproject.eu") Read more
 
-  //-a.step-group-container(href="#tools")
-    .step-group.step-group--icons
-      .step.step--quarter
-        .step__content
-          .step__icon-title Title
-          .step-icon
-      .step.step--quarter
-        .step__content
-          .step__icon-title Title
-          .step-icon
-      .step.step--quarter
-        .step__content
-          .step__icon-title Title
-          .step-icon
-      .step.step--quarter
-        .step__content
-          .step__icon-title Title
-          .step-icon
-
-    .step-group
-      .step.step--quarter
-        .step__content.step__content--secure-notifications
-          .step__title Notify
-      .step.step--quarter
-        .step__content.step__content--collaborative-policy
-          .step__title Collaborate
-      .step.step--quarter
-        .step__content.step__content--electronic-voting
-          .step__title Vote
-      .step.step--quarter
-        .step__content.step__content--block-chain
-          .step__title Reward
-    .step-group
-      .step.step--quarter
-        .step__content
-          .step__title &nbsp;
-      .step.step--three-quarter
-        .step__content.step__content--open-auth
-          .step__title Sign in
-
+  .step-list-container
+    ul.step-list
+      li.step-item
+        .step-item__icon.icon--notified
+        .step-item__text
+          strong Be notified
+          = " "
+          | and keep informed on issues that matter to you
+      li.step-item
+        .step-item__icon.icon--propose
+        .step-item__text
+          strong Propose and draft
+          = " "
+          | solutions and policy collaboratively
+      li.step-item
+        .step-item__icon.icon--decide
+        .step-item__text
+          strong Decide and vote
+          = " "
+          | on solutions collectively
+      li.step-item
+        .step-item__icon.icon--reward
+        .step-item__text
+          strong Implement and reward
+          = " "
+          | everyone while tracking progress
 
   .middle-container-wrapper--dark
     .middle-container
