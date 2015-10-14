@@ -1,5 +1,6 @@
 .DS_Store
 .idea
 public
+deployed
 node_modules
 bower_components
