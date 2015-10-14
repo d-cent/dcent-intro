@@ -35,10 +35,16 @@ $product--padding: 1.5rem;
   &--electronic-voting {
     $color: #007E84;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/evote.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/evote.jpg") no-repeat 50% 50%;
     background-size: cover;
   }
   &--open-auth {
+    $color: #690055;
+    background-color: $color;
+    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/open-auth.jpg") no-repeat;
+    background-size: cover;
+  }
+  &--funky {
     $color: #690055;
     background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/open-auth.jpg") no-repeat;
@@ -49,10 +55,14 @@ $product--padding: 1.5rem;
     margin: 0.5em;
     display: flex;
     flex: 1;
+    min-height: 275px;
     text-align: left;
     padding-bottom: 6rem;
     justify-content: center;
-    //align-content: flex-start;
+    align-self: stretch;
+    &--two-thirds {
+      flex: 2;
+    }
     &--full-width {
       flex-basis: 100%;
     }
@@ -132,7 +142,7 @@ $product--padding: 1.5rem;
     margin-right: -0.5rem;
   }
   &--align-right {
-    @include width-from($medium_device) {
+    @include width-from($large_device) {
       left: calc(100% - 270px);
       right: $product--padding;
     }
