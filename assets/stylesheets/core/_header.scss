@@ -14,8 +14,9 @@ $header_logo_image_path: 'd-cent.svg';
 }
 
 .header__inner {
+  @include vertical-middle-me;
   position: relative;
-  padding-top: 2rem;
+  //padding-top: 2rem;
   padding-left: 2rem;
   padding-right: 2rem;
   text-align: center;
