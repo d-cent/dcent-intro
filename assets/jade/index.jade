@@ -1,7 +1,7 @@
 extends layout/layout
 
 mixin addProduct(title, demoURL, gitURL, productClass, textClass, linkClass)
-  .product(class=productClass)
+  .product(class=productClass, id=productClass)
     .product__text(class=textClass)
       h2.product__name #{title}
       p.product__description
@@ -37,28 +37,32 @@ block content
           strong Be notified
           = " "
           | and keep informed on issues that matter to you
-        .step-item__arrow.icon--notified-arrow
+        a(href="#product--citizens-notifications")
+          .step-item__arrow.icon--notified-arrow
       li.step-item.step-item--propose
         .step-item__icon.icon--propose
         .step-item__text
           strong Propose and draft
           = " "
           | solutions and policy collaboratively
-        .step-item__arrow.icon--propose-arrow
+        a(href="#product--collaborative-policy")
+          .step-item__arrow.icon--propose-arrow
       li.step-item.step-item--decide
         .step-item__icon.icon--decide
         .step-item__text
           strong Decide and vote
           = " "
           | on solutions collectively
-        .step-item__arrow.icon--decide-arrow
+        a(href="#product--electronic-voting")
+          .step-item__arrow.icon--decide-arrow
       li.step-item.step-item--reward
         .step-item__icon.icon--reward
         .step-item__text
           strong Implement and reward
           = " "
           | everyone while tracking progress
-        .step-item__arrow.icon--reward-arrow
+        a(href="#product--block-chain")
+          .step-item__arrow.icon--reward-arrow
 
   .middle-container-wrapper#tools
     .product-intro
