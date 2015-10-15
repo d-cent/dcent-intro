@@ -15,7 +15,7 @@ $product--padding: 1.5rem;
   text-align: center;
   color: $white;
   border-radius: 3px;
-  &--secure-notifications {
+  &--citizens-notifications {
     $color: $notify--color;
     background-color: $color;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/notifications.jpg") no-repeat;
