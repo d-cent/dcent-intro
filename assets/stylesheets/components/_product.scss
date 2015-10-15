@@ -45,10 +45,10 @@ $product--padding: 1.5rem;
     background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/open-auth.jpg") no-repeat;
     background-size: cover;
   }
-  &--funky {
+  &--secure-notifications {
     $color: $auth--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/open-auth.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/secure-notifications.jpg") no-repeat;
     background-size: cover;
   }
 
