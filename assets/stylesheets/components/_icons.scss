@@ -11,6 +11,19 @@
   background-image: image-url('steps/reward.svg');
 }
 
+.icon--notified-arrow {
+  background-image: image-url('steps/step-arrows/notified.svg');
+}
+.icon--propose-arrow {
+  background-image: image-url('steps/step-arrows/propose.svg');
+}
+.icon--decide-arrow {
+  background-image: image-url('steps/step-arrows/decision.svg');
+}
+.icon--reward-arrow {
+  background-image: image-url('steps/step-arrows/reward.svg');
+}
+
 .icon--email {
   background-image: image-url('social/mail.svg');
 }
