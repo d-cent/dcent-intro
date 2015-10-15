@@ -4,3 +4,4 @@ public
 deployed
 node_modules
 bower_components
+*.iml
