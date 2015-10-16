@@ -72,36 +72,29 @@ block content
     .product-grid
 
       .product-grid__group
-        .product-container.product-container--two-thirds
-          +addProduct("Citizens Notifications", "https://decisions.dcentproject.eu", "https://github.com/ThoughtWorksInc/HelsinkiActivityStream", "product--citizens-notifications", "", "product-links--align-right")
-            | Get notified on issues and decisions that are relevant to you
         .product-container
-          +addProduct("Collaborative policy making", "https://objective8.dcentproject.eu", "https://github.com/ThoughtWorksInc/objective8", "product--collaborative-policy")
+          +addProduct("Citizens notifications", "https://decisions.dcentproject.eu", "https://github.com/ThoughtWorksInc/HelsinkiActivityStream", "product--citizens-notifications", "", "")
+          +addProduct("Electronic Voting", "https://agoravoting.com", "https://github.com/agoravoting", "product--electronic-voting", "", "")
+        .product-container.product-container--two-thirds
+          +addProduct("Collaborative policy making", "https://objective8.dcentproject.eu", "https://github.com/ThoughtWorksInc/objective8", "product--collaborative-policy", "", "product-links--align-right")
             | Propose ideas and collaborate on policy drafting
 
       .product-grid__group.product-grid__group--medium-full
         .product-container
-          +addProduct("Electronic voting", "https://agoravoting.com", "https://github.com/agoravoting", "product--electronic-voting", "")
-            | Secure electronic voting system
+          +addProduct("Barcelona collective deliberation", "http://preprograma.barcelonaencomu.cat", "https://github.com/podemos-info/participa", "product--collaborative-policy", "", "")
+          +addProduct("Madrid citizens initiatives", "https://decide.madrid.es", "https://github.com/AyuntamientoMadrid/participacion", "product--collaborative-policy", "", "")
         .product-container.product-container--two-thirds
           .product-grid__sub-group
-            +addProduct("Citizens initiative", "https://decide.madrid.es", "https://github.com/AyuntamientoMadrid/participacion", "product--collaborative-policy")
-              | Citizen initiative platform for the municipality of Madrid
-            +addProduct("Collective Deliberation", "http://preprograma.barcelonaencomu.cat", "https://github.com/podemos-info/participa", "product--collaborative-policy")
-              | Citizen deliberation platform for the municipality of Barcelona
-          .product-grid__sub-group
-            +addProduct("Citizen priorities and budgeting ", "https://demo.yrpri.org", "https://github.com/rbjarnason/your-priorities", "product--collaborative-policy")
-              | Prioritisation and participatory budgeting platform for Reykjavik
-            +addProduct("Blockchain reward scheme", "http://freecoin.ch", "https://github.com/d-cent/freecoin", "product--block-chain")
+            +addProduct("Citizen priorities and budgeting Reykjavik", "https://demo.yrpri.org", "https://github.com/rbjarnason/your-priorities", "product--collaborative-policy", "", "")
+            +addProduct("Blockchain Reward scheme", "http://freecoin.ch", "https://github.com/d-cent/freecoin", "product--block-chain", "", "product-links--align-right")
               | Complementary currency toolkit
 
       .product-grid__group
-        .product-container
-          +addProduct("Secure notifications ", "https://mooncake.dcentproject.eu", "https://github.com/ThoughtWorksInc/mooncake", "product--secure-notifications")
-            | Add notifications to your participation tools.
         .product-container.product-container--two-thirds
-          +addProduct("Common open authentication", "https://sso.dcentproject.eu", "https://github.com/ThoughtWorksInc/stonecutter", "product--open-auth product--full-width", "", "product-links--align-right")
-            | Open authentication and identity management. One log-in for using D-CENT tools and other applications
+          +addProduct("Common open authentication", "https://sso.dcentproject.eu", "https://github.com/ThoughtWorksInc/stonecutter", "product--open-auth product--full-width", "", "")
+            | Open authentication and identity management. One log-in for using D-CENT tools and applications
+        .product-container
+          +addProduct("Secure notifications engine", "https://mooncake.dcentproject.eu", "https://github.com/ThoughtWorksInc/mooncake", "product--secure-notifications", "", "product-links--align-right")
 
   .middle-container-wrapper--dark
     .middle-container

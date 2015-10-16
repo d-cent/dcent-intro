@@ -7,7 +7,7 @@ $header_logo_image_path: 'd-cent.svg';
   background: $header_background_color image-url('background--small.jpg') repeat-x 0 50%;
   background-size: cover;
   @include width-from($medium_device) {
-    height: 600px;
+    height: 460px;
     background-image: image-url('background--medium.jpg');
     background-position: 50% 50%;
   }

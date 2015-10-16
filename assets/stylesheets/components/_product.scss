@@ -1,6 +1,6 @@
 $product__image--width: 270px;
 $product__image--height: 180px;
-$product--padding: 1.5rem;
+$product--padding: 1rem;
 
 .product-intro {
   text-align: center;
@@ -10,55 +10,54 @@ $product--padding: 1.5rem;
 
 .product {
   position: relative;
-  margin-bottom: 1em;
+  margin-bottom: .8em;
   padding: $product--padding;
   text-align: center;
   color: $white;
-  border-radius: 3px;
+  // border-radius: 3px;
   &--citizens-notifications {
     $color: $notify--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/notifications.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/notifications.jpg") no-repeat;
     background-size: cover;
   }
   &--block-chain {
     $color: $reward--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/blockchain.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/blockchain.jpg") no-repeat;
     background-size: cover;
   }
   &--collaborative-policy {
     $color: $propose--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/collab-policy.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/collab-policy.jpg") no-repeat;
     background-size: cover;
   }
   &--electronic-voting {
     $color: $vote--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/evote.jpg") no-repeat 50% 50%;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/evote.jpg") no-repeat 50% 50%;
     background-size: cover;
   }
   &--open-auth {
     $color: $auth--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/open-auth.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/open-auth.jpg") no-repeat;
     background-size: cover;
   }
   &--secure-notifications {
     $color: $auth--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.7), rgba($color, 0.7)), image-url("tools/secure-notifications.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/secure-notifications.jpg") no-repeat;
     background-size: cover;
   }
 
   @include width-from($medium_device) {
-    margin: 0.5em;
+    margin: 0.4em;
     display: flex;
     flex: 1;
-    min-height: 275px;
     text-align: left;
-    padding-bottom: 6rem;
+    padding-bottom: 5rem;
     justify-content: center;
     align-self: stretch;
     &--two-thirds {
@@ -73,7 +72,6 @@ $product--padding: 1.5rem;
     @include width-from($medium_device) {
       flex: 1;
       align-self: flex-end;
-      padding-top: 1.5rem;
       padding-right: 0.5rem;
       &--align-middle {
         align-self: center;
@@ -85,24 +83,25 @@ $product--padding: 1.5rem;
 .product__name {
   line-height: 1.1;
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 0;
   font-family: $heading_title_font_family;
   letter-spacing: -0.02rem;
   @include font-size(24px);
   @include width-from($medium_device) {
-    //@include font-size(34px);
+    @include font-size(20px);
   }
   @include width-from($large_device) {
-    @include font-size(29px);
+    @include font-size(22px);
   }
   @include width-from($extra_large_device) {
-    @include font-size(34px);
+    @include font-size(24px);
   }
 }
 
 .product__description {
   margin-top: 0;
   margin-bottom: 1rem;
+  padding-top: .3rem;
   line-height: 1.35;
   @include font-size(16px);
   @include width-from($medium_device) {
@@ -133,24 +132,25 @@ $product--padding: 1.5rem;
   @include clearfix;
   margin-top: 0;
   margin-bottom: 0;
+  margin-left: 2.5rem;
   @include width-from($medium_device) {
     position: absolute;
     bottom: $product--padding;
-    left: $product--padding;
+    margin-left: 0;
+    left: .5rem;
     right: $product--padding;
     max-width: 270px;
-    margin-left: -0.5rem;
-    margin-right: -0.5rem;
   }
   &--align-right {
     @include width-from($large_device) {
-      left: calc(100% - 270px);
-      right: $product--padding;
+      width: 100%;
+      left: auto;
+      right: -30px;
     }
   }
   &__item {
     display: block;
-    width: 50%;
+    width: 43%;
     float: left;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
