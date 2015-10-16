@@ -7,7 +7,7 @@ $header_logo_image_path: 'd-cent.svg';
   background: $header_background_color image-url('background--small.jpg') repeat-x 0 50%;
   background-size: cover;
   @include width-from($medium_device) {
-    height: 400px;
+    height: 600px;
     background-image: image-url('background--medium.jpg');
     background-position: 50% 50%;
   }
@@ -37,7 +37,9 @@ $header_logo_image_path: 'd-cent.svg';
 
 .header__intro {
   max-width: $large_device;
-  margin-left: auto;
-  margin-right: auto;
   color: $white;
+  @include width-from($medium_device) {
+    margin-left: 30%;
+    margin-right: 30%;
+  }
 }

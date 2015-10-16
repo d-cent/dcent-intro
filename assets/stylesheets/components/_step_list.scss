@@ -4,6 +4,9 @@
   margin-right: auto;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
+  @include width-from($medium_device) {
+    padding-bottom: 0;
+  }
 }
 
 .step-list {
@@ -13,8 +16,6 @@
   margin-right: 0;
   @include width-from($medium_device) {
     display: flex;
-    padding-top: 3rem;
-    padding-bottom: 3rem;
   }
 }
 
@@ -25,6 +26,10 @@
   text-align: center;
   margin-bottom: 1.25rem;
   padding-bottom: 20px;
+  @include width-from($medium_device) {
+    margin-bottom: 0;
+    padding-bottom: 0;
+  }
 
   &__icon {
     height: auto;
