@@ -131,6 +131,10 @@ $product--padding: 1rem;
   @include font-size(24px);
   @include width-from($medium_device) {
     @include font-size(20px);
+    &__medium-font {
+      font-size: 25px;
+      flex: 2;
+    }
     &__bigger-font {
       font-size: 33px;
       flex: 2;
