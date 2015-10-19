@@ -89,37 +89,48 @@ $product--padding: 1rem;
       flex-direction: row;
       }
   &__icon {
-    align-self: flex-start;
+    flex: 1;
     height: 45px;
     width: 35%;
     background-size: contain;
     background-repeat: no-repeat;
-    }
+    background-position: center;
+  }
+  &__icon--align-right {
+    background-position: right;
+    height: 55px;
+  }
 }
 
 .product__name {
+  flex: 2;
   line-height: 1.1;
   margin-top: 0;
   margin-bottom: 0;
   font-family: $heading_title_font_family;
   letter-spacing: -0.02rem;
+  text-align: left;
   @include font-size(24px);
   @include width-from($medium_device) {
     @include font-size(20px);
+    &__bigger-font {
+      font-size: 33px;
+      flex: 2;
+    }
   }
   @include width-from($large_device) {
-    @include font-size(22px);
+    //@include font-size(22px);
   }
   @include width-from($extra_large_device) {
-    @include font-size(24px);
+    //@include font-size(24px);
   }
 }
 
 .product__description {
-  margin-top: 0;
-  margin-bottom: 1rem;
+  margin-top: 1rem;
   padding-top: .3rem;
   line-height: 1.35;
+  margin-bottom: -20px;
   @include font-size(16px);
   @include width-from($medium_device) {
     @include font-size(18px);
