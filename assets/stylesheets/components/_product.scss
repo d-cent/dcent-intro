@@ -36,6 +36,24 @@ $product--padding: 1rem;
     background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/collab-policy.jpg") no-repeat;
     background-size: cover;
   }
+  &--collaborative-policy-bar {
+    $color: $propose--color;
+    background-color: $color;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/barcelona.jpg") no-repeat;
+    background-size: cover;
+  }
+  &--collaborative-policy-mad {
+    $color: $propose--color;
+    background-color: $color;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/madrid.jpg") no-repeat;
+    background-size: cover;
+  }
+  &--collaborative-policy-rey {
+    $color: $propose--color;
+    background-color: $color;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/reykjavik.jpg") no-repeat;
+    background-size: cover;
+  }
   &--electronic-voting {
     $color: $vote--color;
     background-color: $color;
