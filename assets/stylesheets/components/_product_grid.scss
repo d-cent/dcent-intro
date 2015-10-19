@@ -8,7 +8,7 @@
   }
   @include width-from($large_device) {
     &--two-thirds {
-      min-height: 22.6em;
+      min-height: 17.6em;
       flex: 2;
     }
   }
