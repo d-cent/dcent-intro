@@ -14,7 +14,7 @@ $product--padding: 1rem;
   position: relative;
   margin-bottom: .8em;
   padding: $product--padding;
-  min-height: 10.5em;
+  padding-top: 0;
   text-align: center;
   color: $white;
   // border-radius: 3px;
@@ -77,7 +77,6 @@ $product--padding: 1rem;
     margin: 0.4em;
     display: flex;
     flex: 1;
-    padding-bottom: 5rem;
     justify-content: center;
     align-self: stretch;
     &--two-thirds {
@@ -90,7 +89,7 @@ $product--padding: 1rem;
 
   &__text {
     @include width-from($medium_device) {
-      flex: 1;
+      flex: 2;
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -107,12 +106,14 @@ $product--padding: 1rem;
       flex-direction: row;
       }
   &__icon {
-    flex: 1;
-    height: 45px;
-    width: 35%;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+    @include width-from($large_device) {
+      flex: 1;
+      height: 45px;
+      width: 35%;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
   }
   &__icon--align-right {
     background-position: right;
@@ -123,13 +124,13 @@ $product--padding: 1rem;
 .product__name {
   flex: 2;
   line-height: 1.1;
-  margin-top: 0;
-  margin-bottom: 0;
   font-family: $heading_title_font_family;
   letter-spacing: -0.02rem;
-  text-align: left;
   @include font-size(24px);
-  @include width-from($medium_device) {
+  @include width-from($large_device) {
+    margin-top: 0;
+    margin-bottom: 0;
+    text-align: left;
     @include font-size(20px);
     &__medium-font {
       font-size: 25px;
@@ -149,13 +150,12 @@ $product--padding: 1rem;
 }
 
 .product__description {
-  margin-top: 1rem;
-  padding-top: .3rem;
-  line-height: 1.35;
-  margin-bottom: -20px;
-  @include font-size(16px);
+  display: none;
   @include width-from($medium_device) {
+    display: block;
     @include font-size(18px);
+    line-height: 1.35;
+    @include font-size(16px);
   }
 }
 
@@ -178,27 +178,21 @@ $product--padding: 1rem;
 }
 
 .product-links {
-  @include reset-list;
-  @include clearfix;
-  margin-top: 0;
-  margin-bottom: 0;
-  margin-left: 2.5rem;
+  margin-left: 10%;
   @include width-from($medium_device) {
-    position: absolute;
-    bottom: $product--padding;
-    margin-left: 0;
-    left: .5rem;
-    right: $product--padding;
-    max-width: 270px;
-  }
-  &--align-right {
+    margin-top: 1em;
     @include width-from($large_device) {
-      width: 100%;
-      left: auto;
-      right: -30px;
+      flex: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      margin-top: 0;
+      margin-right: auto;
+      margin-left: auto;
     }
   }
   &__item {
+    flex: 1;
     display: block;
     width: 43%;
     float: left;
