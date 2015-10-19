@@ -9,6 +9,8 @@ $product--padding: 1rem;
 
 
 .product {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: .8em;
   padding: $product--padding;
@@ -57,7 +59,6 @@ $product--padding: 1rem;
     margin: 0.4em;
     display: flex;
     flex: 1;
-    text-align: left;
     padding-bottom: 5rem;
     justify-content: center;
     align-self: stretch;
@@ -72,13 +73,27 @@ $product--padding: 1rem;
   &__text {
     @include width-from($medium_device) {
       flex: 1;
-      align-self: flex-end;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding-right: 0.5rem;
       &--align-middle {
         align-self: center;
       }
     }
   }
+  &__header {
+      display: flex;
+      flex-direction: row;
+      }
+  &__icon {
+    align-self: flex-start;
+    height: 45px;
+    width: 45%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    }
 }
 
 .product__name {
