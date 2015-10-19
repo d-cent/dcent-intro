@@ -47,7 +47,7 @@
   padding-right: 1rem;
   text-align: center;
   &__icon {
-    max-width: 180px;
+    max-width: 150px;
     margin-left: auto;
     margin-right: auto;
     border: 1px solid transparent;
@@ -55,7 +55,7 @@
     background-position: 50% 50%;
     background-size: 75%;
     @include width-from($medium_device) {
-      max-width: 260px;
+      max-width: 150px;
     }
     &:before {
       content: '';
