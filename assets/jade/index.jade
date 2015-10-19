@@ -6,9 +6,9 @@ mixin addProduct(title, demoURL, gitURL, productClass, textClass, linkClass)
       h2.product__name #{title}
       p.product__description
         block
-    ul.product-links(class=linkClass)
-      li.product-links__item: a.button.button--full-width.button--outline(href="#{demoURL}") Demo
-      li.product-links__item: a.button.button--full-width.button--outline(href="#{gitURL}") Github
+    .product-links(class=linkClass)
+      .product-links__item: a.button.button--full-width.button--outline(href="#{demoURL}") Demo
+      .product-links__item: a.button.button--full-width.button--outline(href="#{gitURL}") Github
 
 
 block vars
