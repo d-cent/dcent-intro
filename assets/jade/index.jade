@@ -141,7 +141,7 @@ block content
       .tool_list
         h2.section-title D-CENT tools in action
         .tool-item
-          a.tool-item__link(href="https://participa.barcelonaencomu.cat/ca")
+          a.tool-item__link(href="https://participa.barcelonaencomu.cat/ca" onclick="trackOutboundLink('https://participa.barcelonaencomu.cat/ca'); return false;")
             .tool-item__image
               +imageIncludeTag('screenshots/barcelona.png', 'tool-item__image-img', {alt: 'Barcelona screenshot'})
             .tool-item__text
@@ -150,7 +150,7 @@ block content
               .button Visit
 
         .tool-item
-          a.tool-item__link(href="https://betrireykjavik.is/")
+          a.tool-item__link(href="https://betrireykjavik.is/" onclick="trackOutboundLink('https://betrireykjavik.is/'); return false;")
             .tool-item__image
               +imageIncludeTag('screenshots/reykjavik.png', 'tool-item__image-img', {alt: 'Reykjavik screenshot'})
             .tool-item__text
@@ -159,7 +159,7 @@ block content
               .button Visit
 
         .tool-item
-          a.tool-item__link(href="https://decisions.dcentproject.eu/")
+          a.tool-item__link(href="https://decisions.dcentproject.eu/" onclick="trackOutboundLink('https://decisions.dcentproject.eu/'); return false;")
             .tool-item__image
               +imageIncludeTag('screenshots/helsinki.png', 'tool-item__image-img', {alt: 'Helsinki screenshot'})
             .tool-item__text
@@ -168,7 +168,7 @@ block content
               .button Visit
 
         .tool-item
-          a.tool-item__link(href="https://decide.madrid.es/")
+          a.tool-item__link(href="https://decide.madrid.es/" onclick="trackOutboundLink('https://decide.madrid.es/'); return false;")
             .tool-item__image
               +imageIncludeTag('screenshots/madrid.png', 'tool-item__image-img', {alt: 'Madrid screenshot'})
             .tool-item__text
@@ -178,11 +178,11 @@ block content
 
   .social-links
     ul.social-links-list
-      li.social-link: a.social-link__link.icon--dcent(href="http://dcentproject.eu")
+      li.social-link: a.social-link__link.icon--dcent(href="http://dcentproject.eu" onclick="trackOutboundLink('http://dcentproject.eu'); return false;")
         .social-link__text DCENT Project
       li.social-link: a.social-link__link.icon--email(href="mailto:info@dcentproject.eu")
         .social-link__text Email
-      li.social-link: a.social-link__link.icon--twitter(href="https://www.twitter.com/dcentproject")
+      li.social-link: a.social-link__link.icon--twitter(href="https://www.twitter.com/dcentproject" onclick="trackOutboundLink('https://www.twitter.com/dcentproject'); return false;")
         .social-link__text Twitter
 
   .project-partners
