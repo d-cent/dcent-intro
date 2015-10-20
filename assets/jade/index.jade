@@ -40,7 +40,7 @@ block content
           strong Be notified
           = " "
           | and keep informed on issues that matter to you
-        a(href="#product--citizens-notifications")
+        a(href="#product--citizens-notifications" onclick="trackOutboundLink('#product--citizens-notifications'); return false;")
           .step-item__arrow.icon--notified-arrow
       li.step-item.step-item--propose
         .step-item__icon.icon--propose
@@ -48,7 +48,7 @@ block content
           strong Propose and draft
           = " "
           | solutions and policy collaboratively
-        a(href="#product--collaborative-policy")
+        a(href="#product--collaborative-policy" onclick="trackOutboundLink('#product--collaborative-policy'); return false;")
           .step-item__arrow.icon--propose-arrow
       li.step-item.step-item--decide
         .step-item__icon.icon--decide
@@ -56,7 +56,7 @@ block content
           strong Decide and vote
           = " "
           | on solutions collectively
-        a(href="#product--electronic-voting")
+        a(href="#product--electronic-voting" onclick="trackOutboundLink('#product--electronic-voting'); return false;")
           .step-item__arrow.icon--decide-arrow
       li.step-item.step-item--reward
         .step-item__icon.icon--reward
@@ -64,7 +64,7 @@ block content
           strong Implement and reward
           = " "
           | everyone while tracking progress
-        a(href="#product--block-chain")
+        a(href="#product--block-chain" onclick="trackOutboundLink('#product--block-chain'); return false;")
           .step-item__arrow.icon--reward-arrow
 
   .middle-container-wrapper#tools
