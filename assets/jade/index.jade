@@ -10,8 +10,8 @@ mixin addProduct(title, demoURL, gitURL, productClass, textClass, linkClass, pro
         p.product__description(class=narrowDescriptionClass)
           block
     .product-links(class=linkClass)
-      .product-links__item: a.button.button--full-width.button--outline(href="#{demoURL}") Demo
-      .product-links__item: a.button.button--full-width.button--outline(href="#{gitURL}") Github
+      .product-links__item: a.button.button--full-width.button--outline(href="#{demoURL}" onclick="trackOutboundLink('#{demoURL}'); return false;") Demo
+      .product-links__item: a.button.button--full-width.button--outline(href="#{gitURL}" onclick="trackOutboundLink('#{gitURL}'); return false;") Github
 
 
 block vars
@@ -30,7 +30,7 @@ block content
       h1.page_title.page_title--shadow Technologies for 21st Century democracy
       .header__intro
         p.lede.lede--shadow D-CENT is a Europe-wide project creating open, secure and privacy-aware tools for direct democracy and economic empowerment.
-        //a.button.button--white(href="http://dcentproject.eu") Read more
+        //a.button.button--white(href="http://dcentproject.eu" onclick="trackOutboundLink('http://dcentproject.eu'); return false;) Read more
 
   .step-list-container
     ul.step-list
@@ -216,3 +216,12 @@ block content
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
     ga('create', 'UA-60048456-2', 'auto');
     ga('send', 'pageview');
+
+  script.
+    var trackOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {'hitCallback':
+        function () {
+        document.location = url;
+        }
+      });
+    }
