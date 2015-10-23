@@ -59,7 +59,6 @@
   }
 
   &--outline {
-    min-width: 4.3em;
     background-color: transparent;
     color: $white;
     border: 1px solid rgba($white, 0.5);
@@ -98,6 +97,4 @@
       background-color: darken($dark_pink, 5%);
     }
   }
-
-
 }
