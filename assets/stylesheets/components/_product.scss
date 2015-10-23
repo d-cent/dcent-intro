@@ -82,9 +82,6 @@ $product--padding: 1rem;
     &--two-thirds {
       flex: 2;
     }
-    &--full-width {
-      flex-basis: 100%;
-    }
   }
 
   &__text {
@@ -185,10 +182,9 @@ $product--padding: 1rem;
 }
 
 .product-links {
-  flex: 0;
   display: flex;
   flex-direction: row;
-  width: 15rem;
+  width: 12rem;
   align-self: center;
   &__item {
     flex: 1;
