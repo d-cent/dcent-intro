@@ -185,15 +185,24 @@ $product--padding: 1rem;
 }
 
 .product-links {
-  flex: 0;
-  display: flex;
-  flex-direction: row;
-  width: 15rem;
-  align-self: center;
+  margin-left: 10%;
+  @include width-from($medium_device) {
+    margin-top: 1em;
+    @include width-from($large_device) {
+      flex: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: flex-end;
+      margin-top: 0;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
   &__item {
     flex: 1;
     display: block;
     width: 43%;
+    float: left;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     &:first-child {
