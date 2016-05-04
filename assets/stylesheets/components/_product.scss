@@ -67,7 +67,7 @@ $product--padding: 1rem;
     background-size: cover;
   }
   &--secure-notifications {
-    $color: $auth--color;
+    $color: $notify--color;
     background-color: $color;
     background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/secure-notifications.jpg") no-repeat;
     background-size: cover;
