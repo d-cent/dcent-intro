@@ -26,12 +26,8 @@
         <li class="step-item step-item--notify">
           <div class="step-item__icon icon--notified"></div>
           <div class="step-item__text"><strong>Be notified</strong> and keep informed on issues that matter to you
-          </div>
-          <label for="notification-info" class="notification-stage-info">
-            <div class="step-item__arrow icon--notified-arrow"></div>
-            <input id="notification-info" type="checkbox">
-            <div>Content 1</div>
-          </label>
+          </div><a href="#product--citizens-notifications" onclick="trackOutboundLink('#product--citizens-notifications'); return false;">
+            <div class="step-item__arrow icon--notified-arrow"></div></a>
         </li>
         <li class="step-item step-item--propose">
           <div class="step-item__icon icon--propose"></div>
@@ -53,7 +49,6 @@
         </li>
       </ul>
     </div>
-    <div id="stage-info"></div>
     <div id="tools" class="middle-container-wrapper">
       <div class="product-intro">
         <h2 class="section-title">D-CENT tools</h2>
@@ -313,12 +308,6 @@
           }
         });
       }
-      
-    </script>
-    <script>
-      var getStageInfo = function(id) {
-        document.getElementById(id).innerHTML = "<h2>Citizen Notification</h2> Aesthetic before they sold out 8-bit pickled quinoa, mumblecore brooklyn blog drinking vinegar church-key kinfolk. Mixtape food truck fingerstache etsy, echo park butcher normcore. Kale chips literally retro jean shorts VHS, biodiesel man bun. Raw denim disrupt kogi, bitters single-origin coffee pabst master cleanse intelligentsia hella gluten-free tilde williamsburg organic wolf. LINKS TO DEMO AND GITHUB <h2>Secure Notification Engine</h2>quid photo booth roof party, deep v ramps fashion axe cornhole 8-bit gochujang readymade small batch wayfarers ethical. Put a bird on it ethical tilde, 90's seitan chillwave freegan austin street art migas fixie plaid organic fashion axe hoodie. Knausgaard viral etsy raw denim, man bun pitchfork hella. LINKS TO DEMO AND GITHUB";
-      };
     </script>
   </body>
 </html>
