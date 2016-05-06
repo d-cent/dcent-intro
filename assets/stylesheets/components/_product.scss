@@ -39,19 +39,19 @@ $product--padding: 1rem;
   &--collaborative-policy-bar {
     $color: $propose--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/barcelona.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/Barcelona.jpg") no-repeat;
     background-size: cover;
   }
   &--collaborative-policy-mad {
     $color: $propose--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/madrid.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/Madrid.jpg") no-repeat;
     background-size: cover;
   }
   &--collaborative-policy-rey {
     $color: $propose--color;
     background-color: $color;
-    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/reykjavik.jpg") no-repeat;
+    background: linear-gradient(rgba($color, 0.8), rgba($color, 0.8)), image-url("tools/Reykjavik.jpg") no-repeat;
     background-size: cover;
   }
   &--electronic-voting {
