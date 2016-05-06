@@ -34,14 +34,6 @@ block content
 
   .step-list-container
     ul.step-list
-      li.step-item.step-item--notify
-        .step-item__icon.icon--notified
-        .step-item__text
-          strong Be notified
-          = " "
-          | and keep informed on issues that matter to you
-        a(href="#product--citizens-notifications" onclick="trackOutboundLink('#product--citizens-notifications'); return false;")
-          .step-item__arrow.icon--notified-arrow
       li.step-item.step-item--propose
         .step-item__icon.icon--propose
         .step-item__text
@@ -50,6 +42,14 @@ block content
           | solutions and policy collaboratively
         a(href="#product--collaborative-policy" onclick="trackOutboundLink('#product--collaborative-policy'); return false;")
           .step-item__arrow.icon--propose-arrow
+      li.step-item.step-item--notify
+        .step-item__icon.icon--notified
+        .step-item__text
+          strong Be notified
+          = " "
+          | and keep informed on issues that matter to you
+        a(href="#product--citizens-notifications" onclick="trackOutboundLink('#product--citizens-notifications'); return false;")
+          .step-item__arrow.icon--notified-arrow
       li.step-item.step-item--decide
         .step-item__icon.icon--decide
         .step-item__text
