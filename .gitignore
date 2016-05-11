@@ -5,3 +5,4 @@ deployed
 node_modules
 bower_components
 *.iml
+.sass-cache/
