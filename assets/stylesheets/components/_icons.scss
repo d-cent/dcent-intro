@@ -1,3 +1,6 @@
+.icon--setup {
+  background-image: image-url('steps/open.svg');
+}
 .icon--notified {
   background-image: image-url('steps/notified.svg');
 }
@@ -27,6 +30,10 @@
   background-image: image-url('product-icons/open.svg');
 }
 
+
+.icon--setup-arrow {
+  background-image: image-url('steps/step-arrows/setup.svg');
+}
 .icon--notified-arrow {
   background-image: image-url('steps/step-arrows/notified.svg');
 }

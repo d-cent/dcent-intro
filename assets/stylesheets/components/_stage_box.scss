@@ -1,0 +1,98 @@
+.tabs {
+  max-width: 91.3%;
+  margin: auto;
+  margin-bottom: 40px;
+  &:after {
+    content: '';
+    display: table;
+    clear: both;
+  }
+  input[type=radio] {
+    display: none;
+  }
+  label {
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 5px;
+    &:hover {
+      margin-top: 5px;
+      margin-bottom: 0px;
+    }
+  }
+}
+
+.tab-content {
+  display: none;
+  width: 100%;
+  float: left;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+#setup-tab {
+  &:checked {
+    ~ {
+      label #setup-arrow {
+        transform: rotate(180deg);
+      }
+      #setup-content {
+        display: block;
+      }
+    }
+  }
+}
+
+#propose-tab {
+  &:checked {
+    ~ {
+      label #propose-arrow {
+        transform: rotate(180deg);
+      }
+      #propose-content {
+        display: block;
+      }
+    }
+  }
+}
+
+#notify-tab {
+  &:checked {
+    ~ {
+      label #notify-arrow {
+        transform: rotate(180deg);
+      }
+      #notify-content {
+        display: block;
+      }
+    }
+  }
+}
+
+#decide-tab {
+  &:checked {
+    ~ {
+      label #decide-arrow {
+        transform: rotate(180deg);
+      }
+      #decide-content {
+        display: block;
+      }
+    }
+  }
+}
+
+#reward-tab {
+  &:checked {
+    ~ {
+      label #reward-arrow {
+        transform: rotate(180deg);
+      }
+      #reward-content {
+        display: block;
+      }
+    }
+  }
+}
