@@ -6,7 +6,8 @@ app.set('port', (process.env.PORT || 5050));
 var pageData = {
   "javascriptsBase": "/assets/javascripts",
   "stylesheetsBase": "/assets/stylesheets",
-  "imagesBase": "/assets/images"
+  "imagesBase": "/assets/images",
+  "pdfBase": "/assets/pdfs"
 };
 
 app.use('/assets', express.static(__dirname + '/public'));

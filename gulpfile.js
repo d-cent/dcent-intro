@@ -25,6 +25,7 @@ var dev_path = {
   images: ['assets/images/**/*', '!assets/images/dev-*'],
   favicons: ['assets/icons/favicon.*'],
   fonts: ['assets/stylesheets/fonts/*','/bower_components/font-awesome/fonts/*'],
+  pdfs: ['assets/pdfs/*'],
   port: 5060
 };
 var build_path = {
@@ -32,6 +33,7 @@ var build_path = {
   html: output_path + '/',
   js: output_path + '/javascripts/',
   images: output_path + '/images',
+  pdfs: output_path + '/pdfs/',
   fonts: output_path + '/stylesheets/fonts/',
   library: output_path + '/library/'
 };
@@ -45,6 +47,7 @@ gulp.task('jade', function () {
           "javascriptsBase": "javascripts",
           "stylesheetsBase": "stylesheets",
           "imagesBase": "images",
+          "pdfBase": "pdfs",
           "initData": ""
         }
       }))
@@ -88,6 +91,11 @@ gulp.task('favicons', function () {
       .pipe(gulp.dest(build_path.html));
 });
 
+gulp.task('pdfs', function () {
+  return gulp.src(dev_path.pdfs)
+      .pipe(gulp.dest(build_path.pdfs));
+});
+
 gulp.task('fonts', function () {
   return gulp.src(dev_path.fonts)
       .pipe(gulp.dest(build_path.fonts));
@@ -105,6 +113,7 @@ gulp.task('browser-sync', ['nodemon'], function () {
         notify: true,
         open: false,
         files: [build_path.images,
+            build_path.pdfs,
             dev_path.jade,
             dev_path.favicons,
             dev_path.js,
@@ -132,20 +141,20 @@ gulp.task('watch', function () {
     gulp.watch('assets/jade/**/*.jade', browsersync.reload);
     gulp.watch('assets/stylesheets/**/*.scss', ['sass']);
     gulp.watch(dev_path.images, ['images']);
+    gulp.watch(dev_path.pdfs, ['pdfs']);
     gulp.watch(dev_path.js, ['js']);
 });
-
 
 gulp.task('server', function (callback) {
   isDev = true;
   runSequence('clean-build',
-      ['sass', 'js', 'images', 'favicons', 'fonts', 'browser-sync', 'watch'],
+      ['jade', 'sass', 'js', 'images', 'pdfs', 'favicons', 'fonts', 'browser-sync', 'watch'],
       callback);
 });
 
 gulp.task('build', function (callback) {
   runSequence('clean-build',
-      ['jade', 'sass', 'js', 'images', 'favicons', 'fonts'],
+      ['jade', 'sass', 'js', 'images', 'pdfs', 'favicons', 'fonts'],
       callback);
 });
 
