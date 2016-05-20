@@ -35,9 +35,6 @@
 #setup-tab {
   &:checked {
     ~ {
-      label #setup-arrow {
-        transform: rotate(180deg);
-      }
       #setup-content {
         display: block;
       }
@@ -48,9 +45,6 @@
 #propose-tab {
   &:checked {
     ~ {
-      label #propose-arrow {
-        transform: rotate(180deg);
-      }
       #propose-content {
         display: block;
       }
@@ -61,9 +55,6 @@
 #notify-tab {
   &:checked {
     ~ {
-      label #notify-arrow {
-        transform: rotate(180deg);
-      }
       #notify-content {
         display: block;
       }
@@ -74,9 +65,6 @@
 #decide-tab {
   &:checked {
     ~ {
-      label #decide-arrow {
-        transform: rotate(180deg);
-      }
       #decide-content {
         display: block;
       }
@@ -87,9 +75,6 @@
 #reward-tab {
   &:checked {
     ~ {
-      label #reward-arrow {
-        transform: rotate(180deg);
-      }
       #reward-content {
         display: block;
       }

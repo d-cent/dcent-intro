@@ -61,20 +61,20 @@ block content
           | everyone while tracking progress
 
   .tabs
-    input#setup-tab(type='radio', name='tabs')
+    input#setup-tab(type='radio', name='tabs', onclick="highlightStage('step-item--setup', 'purple')")
     label(for='setup-tab')
       // a(href="" onclick="trackOutboundLink(''); return false;")
       .step-item__arrow.icon--setup-arrow#setup-arrow
-    input#propose-tab(type='radio', name='tabs')
+    input#propose-tab(type='radio', name='tabs', onclick="highlightStage('step-item--propose', '#4AC8CE')")
     label(for='propose-tab')
       .step-item__arrow.icon--propose-arrow#propose-arrow
-    input#notify-tab(type='radio', name='tabs')
+    input#notify-tab(type='radio', name='tabs', onclick="highlightStage('step-item--notify', '#FFDB22')")
     label(for='notify-tab')
       .step-item__arrow.icon--notified-arrow#notify-arrow
-    input#decide-tab(type='radio', name='tabs')
+    input#decide-tab(type='radio', name='tabs', onclick="highlightStage('step-item--decide', '#007E84')")
     label(for='decide-tab')
       .step-item__arrow.icon--decide-arrow#decide-arrow
-    input#reward-tab(type='radio', name='tabs')
+    input#reward-tab(type='radio', name='tabs' onclick="highlightStage('step-item--reward', '#FF69E8')")
     label(for='reward-tab')
       .step-item__arrow.icon--reward-arrow#reward-arrow
     #setup-content.tab-content
@@ -293,4 +293,14 @@ block content
         document.location = url;
         }
       });
+    }
+
+  script.
+    var highlightStage = function(className, color) {
+      document.getElementsByClassName('step-item--setup')[0].style.cssText = '-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none';
+      document.getElementsByClassName('step-item--propose')[0].style.cssText = '-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none';
+      document.getElementsByClassName('step-item--notify')[0].style.cssText = '-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none';
+      document.getElementsByClassName('step-item--decide')[0].style.cssText = '-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none';
+      document.getElementsByClassName('step-item--reward')[0].style.cssText = '-webkit-box-shadow: none; -moz-box-shadow: none; box-shadow: none';
+      document.getElementsByClassName(className)[0].style.cssText = '-webkit-box-shadow:0 0 20px ' + color + '; -moz-box-shadow: 0 0 20px ' + color + '; box-shadow:0 0 20px ' + color;
     }
