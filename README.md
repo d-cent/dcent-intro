@@ -30,11 +30,7 @@ sudo npm install -g gulp
 gulp server
 ```
 
-## Preview on Github Pages
+## Preview on GitHub Pages
 ```
 gulp deploy
 ```
-
-###Visit:
-
-[http://d-cent.github.io/dcent-intro/](http://d-cent.github.io/dcent-intro/)
