@@ -37,4 +37,4 @@ gulp deploy
 
 ###Visit:
 
-[http://github.com/d-cent/dcent-intro](http://github.com/d-cent/dcent-intro)
+[http://thoughtworksinc.github.io/dcent-intro/](http://thoughtworksinc.github.io/dcent-intro/)
