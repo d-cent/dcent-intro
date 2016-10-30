@@ -10,9 +10,9 @@ mixin addProduct(title, demoURL, gitURL, productClass, textClass, linkClass, pro
         p.product__description(class=narrowDescriptionClass)
           block
     .product-links(class=linkClass)
-      .product-links__item: a.button.button--full-width.button--outline(href="#{demoURL}" onclick="trackOutboundLink('#{demoURL}'); return false;") Demo
+      if demoURL
+        .product-links__item: a.button.button--full-width.button--outline(href="#{demoURL}" onclick="trackOutboundLink('#{demoURL}'); return false;") Demo
       .product-links__item: a.button.button--full-width.button--outline(href="#{gitURL}" onclick="trackOutboundLink('#{gitURL}'); return false;") Github
-
 
 block vars
   - bodyClass = ""
@@ -82,14 +82,12 @@ block content
       p An open authentication and identity management tool called Stonecutter, which provides a single sign on for using the D-CENT tools and applications.
       .product-links(class=linkClass)
       a.button(href="../pdfs/setting-up-d-cent.pdf") More info
-      a.button(href="https://sso.dcentproject.eu" onclick="trackOutboundLink('https://sso.dcentproject.eu'); return false;") Demo
       a.button(href="https://github.com/d-cent/stonecutter" onclick="trackOutboundLink('https://github.com/d-cent/stonecutter'); return false;") Github
     #propose-content.tab-content
       h3 Collaborative policy making
       p A policy drafting tool that allows organisations to work with their members to produce transparent and crowd-sourced policies. The platform allows a wider community to shape and inform the policy drafts, thus creating a more transparent and open method of producing policy documents than the traditional method.
       .product-links(class=linkClass)
       a.button(href="../pdfs/Collaborative-policy-making.pdf") More info
-      a.button(href="https://objective8.dcentproject.eu" onclick="trackOutboundLink('https://objective8.dcentproject.eu'); return false;") Demo
       a.button(href="https://github.com/d-cent/objective8" onclick="trackOutboundLink('https://github.com/d-cent/objective8'); return false;") Github
       br
       br
@@ -128,7 +126,6 @@ block content
       p A tool called Mooncake that securely notifies an organisation’s members of events and activity in its D-CENT ecosystem.
       .product-links(class=linkClass)
       a.button(href="../pdfs/Citizen-notification.pdf") More info
-      a.button(href="https://mooncake.dcentproject.eu" onclick="trackOutboundLink('https://mooncake.dcentproject.eu'); return false;") Demo
       a.button(href="https://github.com/d-cent/mooncake" onclick="trackOutboundLink('https://github.com/d-cent/mooncake'); return false;") Github
     #decide-content.tab-content
       h3 Electronic voting
@@ -154,7 +151,7 @@ block content
 
       .product-grid__group
         .product-container.product-container--two-thirds
-          +addProduct("Collaborative policy making", "https://objective8.dcentproject.eu", "https://github.com/d-cent/objective8", "product--collaborative-policy", "", "", "icon--propose-white", "product__icon--align-right", "product__name__bigger-font", true, "product__description--narrow")
+          +addProduct("Collaborative policy making", "", "https://github.com/d-cent/objective8", "product--collaborative-policy", "", "", "icon--propose-white", "product__icon--align-right", "product__name__bigger-font", true, "product__description--narrow")
             | Propose ideas and collaborate on policy drafting
         .product-container
           +addProduct("Citizens notifications", "http://decisions.okf.fi", "https://github.com/d-cent/decisionsproto", "product--citizens-notifications", "", "product-links--align-right", "icon--notified-white")
@@ -173,9 +170,9 @@ block content
 
       .product-grid__group
         .product-container
-          +addProduct("Secure notifications engine", "https://mooncake.dcentproject.eu", "https://github.com/d-cent/mooncake", "product--secure-notifications", "", "product-links--align-right", "icon--notified-white", "", "product__name__medium-font")
+          +addProduct("Secure notifications engine", "", "https://github.com/d-cent/mooncake", "product--secure-notifications", "", "product-links--align-right", "icon--notified-white", "", "product__name__medium-font")
         .product-container.product-container--two-thirds
-          +addProduct("Common open authentication", "https://sso.dcentproject.eu", "https://github.com/d-cent/stonecutter", "product--open-auth product--full-width", "", "", "icon--open-white", "product__icon--align-right", "product__name__bigger-font", true)
+          +addProduct("Common open authentication", "", "https://github.com/d-cent/stonecutter", "product--open-auth product--full-width", "", "", "icon--open-white", "product__icon--align-right", "product__name__bigger-font", true)
             | Open authentication and identity management. One log-in for using D-CENT tools and applications
 
 
